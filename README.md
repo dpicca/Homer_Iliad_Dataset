@@ -13,7 +13,7 @@ Les objectifs du projet sont simples et peuvent être divisés en quatre étapes
 - Explorer et analyser les ontologies [character-profiling-ontology](https://github.com/dpicca/ontologies/tree/main/character-profiling-ontology/V2)
   -  vous trouverez plus d'infos sur cet ontologie [ici](An_Ontological_Model_for_Inferring_Psychological_Profiles_and_Narrative_Roles_of_Characters.pdf) 
 - ainsi que [ontolex-lemon](https://raw.githubusercontent.com/ontolex/lexinfo/master/ontology/3.0/lexinfo.owl)
-  - vous trouverez plus d'infos sur cet ontologie [ici](https://www.w3.org/2019/09/lexicog/) et [ici](https://elex.link/elex2017/wp-content/uploads/2017/09/paper36.pdf) et [ici](https://youtu.be/TxqvnLPIsa8)  
+  - vous trouverez plus d'infos sur cet ontologie [ici](https://www.w3.org/2019/09/lexicog/), [ici](https://lemon-model.net/index.php), [ici](https://elex.link/elex2017/wp-content/uploads/2017/09/paper36.pdf) et [ici](https://youtu.be/TxqvnLPIsa8)
 - Modifier et créer des nouvelles régles SWRL de l'ontologie `character-profiling-ontology`
 - Faire un alignement ontologique entre les deux ontologies
 - Nourrir l'ontologie avec les données
