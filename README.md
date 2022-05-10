@@ -17,4 +17,6 @@ Les objectifs du projet sont simples et peuvent être divisés en quatre étapes
 - Modifier et créer des nouvelles régles SWRL de l'ontologie `character-profiling-ontology`
 - Faire un alignement ontologique entre les deux ontologies
 - Nourrir l'ontologie avec les données
+
+Optionel
 - Créer des systèmes d'évaluations
