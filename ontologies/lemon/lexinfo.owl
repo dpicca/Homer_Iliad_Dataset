@@ -3408,4 +3408,2569 @@ He is happy/*happy is him</rdfs:comment>
   <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#finite">
     <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Finiteness"/>
     <rdfs:label xml:lang="en">finite</rdfs:label>
-    <rdfs:comment xml:lang="en">Property applied to a verb form that c
+    <rdfs:comment xml:lang="en">Property applied to a verb form that can occur on its own in an independent sentence.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#finite"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#dativeCaseForm">
+    <rdfs:label xml:lang="en">dative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#dativeCaseForm"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Point">
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Symbol"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N76484effae4846ce991c78362d5d413d">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#point"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#pronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Word used in place of a noun or a noun phrase.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#pronoun"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#gloss">
+    <rdfs:label xml:lang="en">gloss</rdfs:label>
+    <rdfs:comment xml:lang="en">In TEI: A phrase or word used to provide a gloss or definition for some other word or phrase.
+In 1951: Any editorial comment.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#gloss"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#benefactiveCaseForm">
+    <rdfs:label xml:lang="en">benefactive case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#geographic">
+    <rdfs:label xml:lang="en">geographic</rdfs:label>
+    <rdfs:comment xml:lang="en">usage marker which identifies the place or region where a lexical unit is mainly used</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#usage"/>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IndirectObject">
+    <rdfs:label xml:lang="en">indirect object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Object"/>
+    <rdfs:comment xml:lang="en">An indirect object is a grammatical relation that is one means of expressing the semantic role of goal and other similar roles. It is proposed for languages in which the role is distinct from the direct object and the oblique object on the basis of multiple independent syntactic or morphological criteria, such as the following: - Having a particular case marking, commonly dative - Governing an agreement affix on the verb, such as person or number - Being distinct from oblique relations in that it may be relativized</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#IndirectObject"/>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#accusativeCaseForm">
+    <rdfs:label xml:lang="en">accusative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#accusativeCaseForm"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessive">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ReferentType"/>
+    <rdfs:label xml:lang="en">possessive</rdfs:label>
+    <rdfs:comment xml:lang="en">Relative to the possession or association.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessive"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DeclarativeClause">
+    <rdfs:label xml:lang="en">declarative clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DeclarativeClause"/>
+  </rdf:Description>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefinite">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Definiteness"/>
+    <rdfs:label xml:lang="en">indefinite</rdfs:label>
+    <rdfs:comment xml:lang="en">Value related to an entity in a situation where the identification of this entity is not clear cut.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefinite"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PersonalPronoun">
+    <rdfs:label xml:lang="en">personal pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N6409497733924c4f8a49b41714a70637">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#personalPronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#inchoative">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Aspect"/>
+    <rdfs:label xml:lang="en">inchoative</rdfs:label>
+    <rdfs:comment xml:lang="en">Aspect that expresses the beginning of an event or state.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#inchoative"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#terminativeCaseForm">
+    <rdfs:label xml:lang="en">terminative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#firstPersonForm">
+    <rdfs:label xml:lang="en">first person form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formPersonVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#firstPersonForm"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveSuperlativeFrame">
+    <example xml:lang="en">tokyo is the BIGGEST of all metropoles</example>
+    <rdfs:label xml:lang="en">adjective superlative frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb54">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb55">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#superlativeAdjunct">
+                <rdfs:label xml:lang="en">superlative adjunct</rdfs:label>
+                <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+                <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#predicativeAdjunct"/>
+                <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#superlativeAdjunct"/>
+              </owl:ObjectProperty>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb56">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#copulativeSubject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectiveSuperlativeFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#secondPerson">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Person"/>
+    <rdfs:label xml:lang="en">second person</rdfs:label>
+    <rdfs:comment xml:lang="en">Second person deixis is deictic reference to a person or persons identified as addressee.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#secondPerson"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IndefiniteArticle">
+    <rdfs:label xml:lang="en">indefinite article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Article"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Na55f0539c197438385c39438e7efaf7d">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteArticle"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#GeneralizationWord">
+    <rdfs:label xml:lang="en">generalization word</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N08ed5679b39e4bbaa33e8fee021f6cf7">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#generalizationWord"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#person">
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdfs:comment xml:lang="en">Indication of grammatical person (1st, 2nd, 3rd, etc.) associated with a given inflected form.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#morphosyntacticProperty"/>
+    <rdfs:range rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Person"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#preteriteTenseForm">
+    <rdfs:label xml:lang="en">preterite tense form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formTenseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#imperfect">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Tense"/>
+    <rdfs:label xml:lang="en">imperfect</rdfs:label>
+    <rdfs:comment xml:lang="en">Verb tense that refers to action in the past that is incomplete or ongoing.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#imperfect"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#formalRegister">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Register"/>
+    <rdfs:label xml:lang="en">formal register</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#formalRegister"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#acronymFor">
+    <rdfs:label xml:lang="en">acronym for</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#contractionFor"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">A linking element used to identify a relation between an acronym and its full or expanded form.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#acronymFor"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PartitiveArticle">
+    <rdfs:label xml:lang="en">partitive article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Article"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N464dfe0bef6f47649f9b084d8bf573ce">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partitiveArticle"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#fusedPreposition">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">fused preposition</rdfs:label>
+    <rdfs:comment xml:lang="en">Preposition that is the result of a morphological merge from at least two words.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPreposition"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#morphologicalElement">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermElement"/>
+    <rdfs:label xml:lang="en">morphological element</rdfs:label>
+    <rdfs:comment xml:lang="en">Unit resulting from the division of words into their smallest meaningful parts.
+Note: moved to lexeme element from being an independent element; note that this is currently an independent element in 12620</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#morphologicalElement"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#StrongPersonalPronoun">
+    <rdfs:label xml:lang="en">strong personal pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N4b439b02c2c74545ab5b23c7e1d00476">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#strongPersonalPronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#transcribedForm">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">transcribed form</rdfs:label>
+    <rdfs:comment xml:lang="en">A form of a term or lexeme resulting from an operation whereby the characters of one writing system are represented by characters from another writing system, taking into account the pronunciation of the characters converted.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#transcribedForm"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Part of speech related to attributes of noun.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#adjective"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#prepositionalGerundClause">
+    <rdfs:label xml:lang="en">prepositional gerund clause</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#prepositionalGerundClause"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#trial">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Number"/>
+    <rdfs:label xml:lang="en">trial</rdfs:label>
+    <rdfs:comment xml:lang="en">Grammatical number referring to 'three things', as opposed to 'singular' and 'plural'.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#trial"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#coordinateConcept">
+    <rdfs:label xml:lang="en">coordinate concept</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#relatedTerm"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">A subordinate concept having the same nearest superordinate concept and same criterion of subdivision as some other concept in a given concept system.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#coordinateConcept"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Comma">
+    <rdfs:label xml:lang="en">comma</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Symbol"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Ndaad2e6806ce4f45b5d31117d27645f3">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#comma"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveAdverbialComplementFrame">
+    <example xml:lang="en">she PUT the cheese back</example>
+    <rdfs:label xml:lang="en">transitive adverbial complement frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb274">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbialComplementFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TransitiveAdverbialComplementFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#deprecatedTerm">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#NormativeAuthorization"/>
+    <rdfs:label xml:lang="en">deprecated term</rdfs:label>
+    <rdfs:comment xml:lang="en">A term rated according to the scale of a term acceptability rating as undesired.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#deprecatedTerm"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#symbol">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">symbol</rdfs:label>
+    <rdfs:comment xml:lang="en">A character or glyph representing an idea, concept or object</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#symbol"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Bullet">
+    <rdfs:label xml:lang="en">bullet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Symbol"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N3ac0d059291246d4823aca21779fe6e8">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#bullet"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#inHouseRegister">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Register"/>
+    <rdfs:label xml:lang="en">in house register</rdfs:label>
+    <rdfs:comment xml:lang="en">Register of terms that are company-specific and not readily recognized outside this environment. // The register of terms that are company-specific and not readily recognized outside this environment.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#inHouseRegister"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#equation">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">equation</rdfs:label>
+    <rdfs:comment xml:lang="en">An expression used to represent a concept based on a statement that two mathematical expressions are, for instance, equal as identified by the equal sign (=), or assigned to one another by a similar sign.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#equation"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveSententialFrame">
+    <example xml:lang="en">he TOLD the audience he was leaving</example>
+    <rdfs:label xml:lang="en">transitive sentential frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#SententialFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb307">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SententialFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TransitiveSententialFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#RelativePronoun">
+    <rdfs:label xml:lang="en">relative pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N0b62ede6a1ce487d85c4728085278169">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#relativePronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#wordElement">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermElement"/>
+    <rdfs:label xml:lang="en">word element</rdfs:label>
+    <rdfs:comment xml:lang="en">Any lexeme element in a compound lexical unit that is itself a word.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#wordElement"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NounPhrase">
+    <rdfs:label xml:lang="en">noun phrase</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#MultiWordExpression"/>
+    <owl:equivalentClass>
+      <rdf:Description rdf:nodeID="n95f281e1e2fa4f7a8d9cb93d6caf5a19b5">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#MultiWordExpression"/>
+          <owl:Restriction rdf:nodeID="n95f281e1e2fa4f7a8d9cb93d6caf5a19b6">
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#head"/>
+            <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Noun"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#pluralNumberForm">
+    <rdfs:label xml:lang="en">plural number form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formNumberVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#pluralNumberForm"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DeficientVerb">
+    <rdfs:label xml:lang="en">deficient verb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Verb"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nf57078a8b7f64fda9f2ffc6ad792388c">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#deficientVerb"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#presentTenseForm">
+    <rdfs:label xml:lang="en">present tense form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formTenseVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#presentTenseForm"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#string">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">string</rdfs:label>
+    <rdfs:comment xml:lang="en">A chunk of text used in a software interface, documentation, help file, or the like.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#string"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#LightVerb">
+    <rdfs:label xml:lang="en">light verb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Verb"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nf4fe33ed66304f9b9e8cbba06bb6e5f2">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#lightVerb"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ConditionalPronoun">
+    <rdfs:label xml:lang="en">conditional pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N066202586f0140ba9a9fa40e1d5eec9f">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#conditionalPronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#nominativeCaseForm">
+    <rdfs:label xml:lang="en">nominative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#nominativeCaseForm"/>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InfinitiveClause">
+    <rdfs:label xml:lang="en">infinitive clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#InfinitiveClause"/>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adessiveCaseForm">
+    <rdfs:label xml:lang="en">adessive case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#commonName">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">common name</rdfs:label>
+    <rdfs:comment xml:lang="en">A synonym for an international scientific term that is used in general discourse in a given language.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#commonName"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjunctiveClause">
+    <rdfs:label xml:lang="en">subjunctive clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SubjunctiveClause"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IndefinitePronoun">
+    <rdfs:label xml:lang="en">indefinite pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N84d9463b9fd5417dbc9433346aa2fa43">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#indefinitePronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#past">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Tense"/>
+    <rdfs:label xml:lang="en">past</rdfs:label>
+    <rdfs:comment xml:lang="en">Past tense is an absolute tense that refers to a time before the moment of utterance.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#past"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#thirdPersonForm">
+    <rdfs:label xml:lang="en">third person form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formPersonVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#thirdPersonForm"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#preModifier">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ModificationType"/>
+    <rdfs:label xml:lang="en">pre modifier</rdfs:label>
+    <rdfs:comment xml:lang="en">Situation where the modifier is before the modified.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#preModifier"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#usageNote">
+    <rdfs:label xml:lang="en">usage note</rdfs:label>
+    <rdfs:comment xml:lang="en">A note containing information on the usage of the associated word or term.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#usageNote"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#clippedTermFor">
+    <rdfs:label xml:lang="en">clipped term for</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#derivedForm"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">A linking element used to identify a relation between a clipped term and its full or expanded form.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#clippedTermFor"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#nucleus">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdfs:label xml:lang="en">nucleus</rdfs:label>
+    <rdfs:comment xml:lang="en">The component of a multiword or multi-morphemic compound term that is determined or modified by the other components making up the term.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#nucleus"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#infix">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermElement"/>
+    <rdfs:label xml:lang="en">infix</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#infix"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#abbreviation">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AbbreviatedForm"/>
+    <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#abbreviation"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePPFrame">
+    <example xml:lang="en">he is RELATED TO her</example>
+    <rdfs:label xml:lang="en">adjective pp frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb33">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePredicativeFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PrepositionalFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivePPFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#acronym">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AbbreviatedForm"/>
+    <rdfs:label xml:lang="en">acronym</rdfs:label>
+    <rdfs:comment xml:lang="en">An abbreviation made up of the initial letters of the components of the full form of the designation or from syllables of the full form and pronounced syllabically.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#acronym"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Prefix">
+    <rdfs:label xml:lang="en">prefix</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Affix"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeMultiplicativeNumeral">
+    <rdfs:label xml:lang="en">interrogative multiplicative numeral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Numeral"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Na89ac16020954236bb7e1922fb1a8806">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeMultiplicativeNumeral"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#finiteness">
+    <rdfs:label xml:lang="en">finiteness</rdfs:label>
+    <rdfs:comment xml:lang="en">Property referring to finite and non-finite status of a verbal form.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#morphosyntacticProperty"/>
+    <rdfs:range rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Finiteness"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#finiteness"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#legalTerm">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#NormativeAuthorization"/>
+    <rdfs:label xml:lang="en">legal term</rdfs:label>
+    <rdfs:comment xml:lang="en">A term that is legally defined and used in legally binding documents.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#legalTerm"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbialPronoun">
+    <rdfs:label xml:lang="en">adverbial pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nf378f9ec5af24e93a126d97534748568">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#adverbialPronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#hint">
+    <rdfs:label xml:lang="en">hint</rdfs:label>
+    <rdfs:comment xml:lang="en">usage marker which cannot be classified otherwise</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#usage"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#yes">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Cliticness"/>
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Negative"/>
+    <rdfs:label xml:lang="en">yes</rdfs:label>
+    <rdfs:comment xml:lang="en">Positive value</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#yes"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PossessiveDeterminer">
+    <rdfs:label xml:lang="en">possessive determiner</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Determiner"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nd1f6801baa834da680083dc81ef643a3">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#possessiveDeterminer"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#benchLevelRegister">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Register"/>
+    <rdfs:label xml:lang="en">bench level register</rdfs:label>
+    <rdfs:comment xml:lang="en">Register of terms used in applications-oriented as opposed to theoretical or academic levels of language. // The register of terms used in applications-oriented as opposed to theoretical or academic levels of language.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#benchLevelRegister"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DitransitiveFrame_To">
+    <example xml:lang="en">he GAVE his mother, he GAVE a present TO his mother</example>
+    <rdfs:label xml:lang="en">ditransitive frame_ to</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#DitransitiveFrame"/>
+    <languageSpecific>en</languageSpecific>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DitransitiveFrame_To"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#nonFinite">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Finiteness"/>
+    <rdfs:label xml:lang="en">non finite</rdfs:label>
+    <rdfs:comment xml:lang="en">Property related for verb forms occurring on their own only in dependent clauses and lacking tense and mood contrasts.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#nonFinite"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#facetiousRegister">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Register"/>
+    <rdfs:label xml:lang="en">facetious register</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#facetiousRegister"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#massNounNumberForm">
+    <rdfs:label xml:lang="en">mass noun number form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formNumberVariant"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#CardinalNumeral">
+    <rdfs:label xml:lang="en">cardinal numeral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Numeral"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Ne2c0730e14994d7abe9287050bb67b9b">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#cardinalNumeral"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#particle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Word that does not belong to one of the main classes of words, is invariable in form, and typically has grammatical or pragmatic meaning.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#particle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeCardinalNumeral">
+    <rdfs:label xml:lang="en">interrogative cardinal numeral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Numeral"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N12f08a177adb4e11a6be13a802729f07">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeCardinalNumeral"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveAdjectivalComplementFrame">
+    <example xml:lang="en">they PAINTED it red</example>
+    <rdfs:label xml:lang="en">transitive adjectival complement frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb271">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivalComplementFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TransitiveAdjectivalComplementFrame"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#locativeCaseForm">
+    <rdfs:label xml:lang="en">locative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DistinctiveParticle">
+    <rdfs:label xml:lang="en">distinctive particle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Particle"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nfbfeeb1682eb4279a2ed19159371003c">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#distinctiveParticle"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#allativeCaseForm">
+    <rdfs:label xml:lang="en">allative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#sublativeCaseForm">
+    <rdfs:label xml:lang="en">sublative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbPhrase">
+    <rdfs:label xml:lang="en">verb phrase</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#MultiWordExpression"/>
+    <owl:equivalentClass>
+      <rdf:Description rdf:nodeID="n95f281e1e2fa4f7a8d9cb93d6caf5a19b13">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/ns/lemon/ontolex#MultiWordExpression"/>
+          <owl:Restriction rdf:nodeID="n95f281e1e2fa4f7a8d9cb93d6caf5a19b14">
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#head"/>
+            <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Verb"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#benefactiveCase">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Case"/>
+    <rdfs:label xml:lang="en">benefactive case</rdfs:label>
+    <rdfs:comment xml:lang="en">Case that expresses that the referent of the noun it marks receives the benefit of the situation expressed by the clause.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#benefactiveCase"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#personal">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ReferentType"/>
+    <rdfs:label xml:lang="en">personal</rdfs:label>
+    <rdfs:comment xml:lang="en">Property that refers to the person.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#personal"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#translativeCaseForm">
+    <rdfs:label xml:lang="en">translative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ReciprocalPronoun">
+    <rdfs:label xml:lang="en">reciprocal pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N7d668a89cfe54083acdaea890c5605c3">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#reciprocalPronoun"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#negativeForm">
+    <rdfs:label xml:lang="en">negative form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formNegativeVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#negativeForm"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Circumposition">
+    <rdfs:label xml:lang="en">circumposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Adposition"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N8174c7402743441abfbe2d8e648db141">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#circumposition"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#comitativeCaseForm">
+    <rdfs:label xml:lang="en">comitative case form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formCaseVariant"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveGenitivePostPositiveFrame">
+    <example xml:lang="de">er ist des hochverrats SCHULDIG</example>
+    <rdfs:label xml:lang="en">adjective genitive post positive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePostPositiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb23">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePostPositiveFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb24">
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#postPositiveArg"/>
+            <owl:someValuesFrom>
+              <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#GenitivePostPositiveArg">
+                <owl:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PostPositiveArg"/>
+                <owl:equivalentClass>
+                  <rdf:Description rdf:nodeID="n9aabec4a1b7344398b24acbe91b82fadb24">
+                    <owl:intersectionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PostPositiveArg"/>
+                      <owl:Restriction rdf:nodeID="n9aabec4a1b7344398b24acbe91b82fadb25">
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/synsem#marker"/>
+                        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#genitiveCase"/>
+                      </owl:Restriction>
+                    </owl:intersectionOf>
+                  </rdf:Description>
+                </owl:equivalentClass>
+              </rdf:Description>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectiveGenitivePostPositiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubordinatingConjunction">
+    <rdfs:label xml:lang="en">subordinating conjunction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Conjunction"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Ne2d9791c648e4ff4a9d73844769d7092">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subordinatingConjunction"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#essiveCase">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Case"/>
+    <rdfs:label xml:lang="en">essive case</rdfs:label>
+    <rdfs:comment xml:lang="en">Case which expresses a state of being.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#essiveCase"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbialComplement">
+    <rdfs:label xml:lang="en">adverbial complement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Complement"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeDeterminer">
+    <rdfs:label xml:lang="en">interrogative determiner</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Determiner"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N9df411e8de994ac58e64fd20c8e1c339">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeDeterminer"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#massNoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Number"/>
+    <rdfs:label xml:lang="en">mass noun</rdfs:label>
+    <rdfs:comment xml:lang="en">Designation of a term or word that is not countable and cannot generally be used with the indefinite article or in the plural.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#massNoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#affix">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermElement"/>
+    <rdfs:label xml:lang="en">affix</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#affix"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SententialClause">
+    <rdfs:label xml:lang="en">sentential clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Infix">
+    <rdfs:label xml:lang="en">infix</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Affix"/>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PrepositionalInterrogativeClause">
+    <rdfs:label xml:lang="en">prepositional interrogative clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#subjunctiveMoodForm">
+    <rdfs:label xml:lang="en">subjunctive mood form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#formMoodVariant"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#subjunctiveMoodForm"/>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeInfinitiveClause">
+    <rdfs:label xml:lang="en">interrogative infinitive clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PossessiveInfinitiveClause">
+    <rdfs:label xml:lang="en">possessive infinitive clause</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#languageSpecific"/>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Slash">
+    <rdfs:label xml:lang="en">slash</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Symbol"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N43569280d0b74ad6aba6567cde7f780f">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#slash"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#inanimate">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Animacy"/>
+    <rdfs:label xml:lang="en">inanimate</rdfs:label>
+    <rdfs:comment xml:lang="en">Perceived as not living.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#inanimate"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#paucal">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Number"/>
+    <rdfs:label xml:lang="en">paucal</rdfs:label>
+    <rdfs:comment xml:lang="en">Number that specifies 'a few' things.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#paucal"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#GeneralAdverb">
+    <rdfs:label xml:lang="en">general adverb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Adverb"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N366b0d50e7b041929dc8a26cf9fec90c">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#generalAdverb"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PredicativeAdverb">
+    <rdfs:label xml:lang="en">predicative adverb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Complement"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PredicativeAdverb"/>
+  </rdf:Description>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#commonlyUsed">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Frequency"/>
+    <rdfs:label xml:lang="en">commonly used</rdfs:label>
+    <rdfs:comment xml:lang="en">Said of a term that appears frequently.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#commonlyUsed"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#conditionalParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">conditional particle</rdfs:label>
+    <rdfs:comment xml:lang="en">conditional particule</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#conditionalParticle"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#sententialClause">
+    <rdfs:label xml:lang="en">sentential clause</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#sententialClause"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SententialFrame">
+    <rdfs:label xml:lang="en">sentential frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Sentential frames take a clause as argument, no conjunction is used and the syntax of the clause is the same as a main clause</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb249">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb250">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#sententialClause"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SententialFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#demonstrativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">demonstrative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun used to point to an entity in the situation or elsewhere in a sentence.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#demonstrativePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Voice">
+    <rdfs:label xml:lang="en">voice</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Voice"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Dating">
+    <rdfs:label xml:lang="en">dating</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Dating"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech">
+    <rdfs:label xml:lang="en">part of speech</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interjection">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interjection</rdfs:label>
+    <rdfs:comment xml:lang="en">Word or sound that expresses an emotion.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interjection"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#semiColon">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">semi colon</rdfs:label>
+    <rdfs:comment xml:lang="en">Sign (;) usually used to separate phrases.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#semiColon"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#diminutiveNoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">diminutive noun</rdfs:label>
+    <rdfs:comment xml:lang="en">diminutive noun</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#diminutiveNoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessivePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">possessive pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun that expresses ownership and relationships like ownership, such as kinship, and other forms of association.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessivePronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#prepositionalAdverb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">prepositional adverb</rdfs:label>
+    <rdfs:comment xml:lang="en">adverb which is very similar in its form to a preposition</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#prepositionalAdverb"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#memberHolonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">member holonym</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#holonymTerm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">holonym term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partitiveRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">Indicates that the referenced element is a part of this object</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#meronymTerm"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#holonymTerm"/>
+      </owl:ObjectProperty>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">Indicates the object is a member of this</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#memberMeronym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">member meronym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#meronymTerm"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">Indicates this is an element of the other</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#memberHolonym"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#memberMeronym"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#memberHolonym"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePOS">
+    <rdfs:label xml:lang="en">adjective</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivePOS"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#substanceMeronym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">substance meronym</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#meronymTerm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">meronym term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partitiveRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">Indicates this is a part of another concept</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#holonymTerm"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#meronymTerm"/>
+      </owl:ObjectProperty>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">Indicates this is a substance that composes the other</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#substanceHolonym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">substance holonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#holonymTerm"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">Indicates what this is composed of</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#substanceMeronym"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#substanceHolonym"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#substanceMeronym"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#compoundPreposition">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">compound preposition</rdfs:label>
+    <rdfs:comment xml:lang="en">Preposition that is a aggregation of words</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#compoundPreposition"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ArticlePOS">
+    <rdfs:label xml:lang="en">article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#DeterminerPOS"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ArticlePOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Conjunction">
+    <rdfs:label xml:lang="en">conjunction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N33b9cc306ba241d7962e6f915c6e71fd">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ConjunctionPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Conjunction"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectControl">
+    <rdfs:label xml:lang="en">subject control</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Control"/>
+    <rdfs:comment xml:lang="en">Indicates the subject of the main clause is the (omitted) subject of the subclause</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SubjectControl"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeRelativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative relative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">pronoun which may act as a relative pronoun or an interrogative one</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeRelativePronoun"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PostPositiveArg">
+    <rdfs:label xml:lang="en">post positive arg</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticArgument"/>
+    <rdfs:comment xml:lang="en">Indicates an argument of an adjective indicated by post-positive modification. An example in english would be that "that is something interesting", where the adjective interesting post-postively modifies something</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PostPositiveArgument"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Case">
+    <rdfs:label xml:lang="en">case</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Case"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Pronoun">
+    <rdfs:label xml:lang="en">pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nd3964991b0a24d42b3c93679c2d7bb32">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PronounPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Pronoun"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ReflexiveFrame">
+    <rdfs:label xml:lang="en">reflexive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb236">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb237">
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#object"/>
+            <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ReflexiveObject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ReflexiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbPOS">
+    <rdfs:label xml:lang="en">verb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessiveParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">possessive particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle expressing ownship.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveParticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#plainVerb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">plain verb</rdfs:label>
+    <rdfs:comment xml:lang="en">verb which has its own semantics</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#plainVerb"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ObjectControl">
+    <rdfs:label xml:lang="en">object control</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Control"/>
+    <rdfs:comment xml:lang="en">Indicates the object of the main clause is also the (omitted) object of the subclause</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ObjectControl"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#letter">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">letter</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#letter"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePredicativeFrame">
+    <example xml:lang="en">he is HAPPY</example>
+    <rdfs:label xml:lang="en">adjective predicative frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb45">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb46">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#copulativeSubject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivePredicativeFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ImpersonalFrame">
+    <rdfs:label xml:lang="en">impersonal frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb117">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb118">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ImpersonalFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Article">
+    <rdfs:label xml:lang="en">article</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Determiner"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nb79d3b66b288482c96a4b93d89f8295e">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ArticlePOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Article"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdpositionPOS">
+    <rdfs:label xml:lang="en">adposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdpositionPOS"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#partitiveRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">partitive relation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/vartrans#senseRel"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">A relation between two concepts where one of the concepts constitutes the whole and the other concept a part of that whole.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#partitiveRelation"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InfinitiveFrame">
+    <rdfs:label xml:lang="en">infinitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Infinitive frames take an infinitive clause as an argument</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb132">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb133">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#infinitiveClause">
+                <rdfs:label xml:lang="en">infinitive clause</rdfs:label>
+                <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+                <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+                <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#infinitiveClause"/>
+              </owl:ObjectProperty>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#InfinitiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner used to express a question.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeDeterminer"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#relativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">relative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun which introduces a relative clause and refers to something that has been said before.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#relativePronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#postposition">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">postposition</rdfs:label>
+    <rdfs:comment xml:lang="en">Adposition that appears at the end of the noun phrase.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#postposition"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#fusedPronounAuxiliary">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">fused pronoun auxiliary</rdfs:label>
+    <rdfs:comment xml:lang="en">word resulting from the aggregation of a pronoun and an auxiliary</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPronounAuxiliary"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeOrdinalNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative ordinal numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">An interrogative/relative word used to ask about numeric ranking.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeOrdinalNumeral"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteOrdinalNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite ordinal numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A word used to indicate imprecise rank of an object in a sequence.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteOrdinalNumeral"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#strongPersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">strong personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Personal pronoun that can occupy the position after a preposition and/or reinforce a weak personal pronoun.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#strongPersonalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessiveRelativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">possessive relative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">A relative pronoun whose antecedent is the possessor of the subject or object in the relative clause.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveRelativePronoun"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#attributiveArg">
+    <rdfs:label xml:lang="en">attributive arg</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#attributiveArg"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IntransitiveFrame">
+    <example xml:lang="en">he LEFT</example>
+    <rdfs:label xml:lang="en">intransitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb155">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb156">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#directObject"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb157">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#IntransitiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Numeral">
+    <rdfs:label xml:lang="en">numeral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N08bc25309cfb4e2f985a88ac8781a432">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#NumeralPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Numeral"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ImpersonalIntransitiveFrame">
+    <rdfs:label xml:lang="en">impersonal intransitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ImpersonalFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb121">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ImpersonalFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb122">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#object"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ImpersonalIntransitiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DativeTransitiveFrame">
+    <example xml:lang="de">ich DANKE dir</example>
+    <rdfs:label xml:lang="en">dative transitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb64">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb65">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#directObject"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb66">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indirectObject">
+                <rdfs:label xml:lang="en">indirect object</rdfs:label>
+                <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+                <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#object"/>
+                <rdfs:comment xml:lang="en">An indirect object is a grammatical relation that is one means of expressing the semantic role of goal and other similar roles. It is proposed for languages in which the role is distinct from the direct object and the oblique object on the basis of multiple independent syntactic or morphological criteria, such as the following: - Having a particular case marking, commonly dative - Governing an agreement affix on the verb, such as person or number - Being distinct from oblique relations in that it may be relativized</rdfs:comment>
+                <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indirectObject"/>
+              </owl:ObjectProperty>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb67">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DativeTransitiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ordinalAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">ordinal adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Adjective/numeral/number expressing a numeric ranking.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ordinalAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#collectivePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">collective pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">A pronoun that refers to all elements of a set.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#collectivePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessTransitiveFrame">
+    <example xml:lang="de">mich FRIERT</example>
+    <rdfs:label xml:lang="en">subjectless transitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb264">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb265">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#directObject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SubjectlessTransitiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbialComplementFrame">
+    <rdfs:label xml:lang="en">adverbial complement frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb60">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb61">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#predicativeAdverb"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbialComplementFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessIntransitiveFrame">
+    <example xml:lang="de">mir SCHWINDELT</example>
+    <rdfs:label xml:lang="en">subjectless intransitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb257">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb258">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#indirectObject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SubjectlessIntransitiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Adposition">
+    <rdfs:label xml:lang="en">adposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Na171bf003bfd4b1d9b28859b03a2800a">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdpositionPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Adposition"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#commonNoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">common noun</rdfs:label>
+    <rdfs:comment xml:lang="en">A noun or adjective denoting a class of objects. // Noun that signifies a non-specific member of a group.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#commonNoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#infinitiveParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">infinitive particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used to express infinitive.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#infinitiveParticle"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#hyponym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">hyponym</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/vartrans#senseRel"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">A term with a narrower meaning</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#hypernym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">hypernym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/vartrans#senseRel"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">A term with a broader meaning</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#hyponym"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#hypernym"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#hyponym"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PrepositionalFrame">
+    <rdfs:label xml:lang="en">prepositional frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <rdfs:comment xml:lang="en">Abstract frame for words that take a prepositional phrase as an argument</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb212">
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#prepositionalAdjunct"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PrepositionalFrame"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#prepositionalAdjunct">
+    <rdfs:label xml:lang="en">prepositional adjunct</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adjunct">
+        <rdfs:label xml:lang="en">adjunct</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#adjunct"/>
+      </owl:ObjectProperty>
+    </rdfs:subPropertyOf>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#prepositionalAdjunct"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#partHolonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">part holonym</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#holonymTerm"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    <rdfs:comment xml:lang="en">Indicates a part of this object</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#partMeronym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part meronym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#meronymTerm"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+        <rdfs:comment xml:lang="en">Indicates this a component of the other concept</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partHolonym"/>
+        <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#partMeronym"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#partHolonym"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame">
+    <rdfs:label xml:lang="en">verb frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#comparativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">comparative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used to compare.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#comparativeParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IntransitivePPFrame">
+    <example xml:lang="en">he TOOK CARE OF her</example>
+    <rdfs:label xml:lang="en">intransitive pp frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#IntransitiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb186">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#IntransitiveFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PPFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#IntransitivePPFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#partitiveArticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">partitive article</rdfs:label>
+    <rdfs:comment xml:lang="en">Article expressing a part or quantity.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#partitiveArticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#invertedComma">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">inverted comma</rdfs:label>
+    <rdfs:comment xml:lang="en">Inverted comma.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#invertedComma"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#lightVerb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">light verb</rdfs:label>
+    <rdfs:comment xml:lang="en">verb participating in a complex predication that has little semantic content of its own.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#lightVerb"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Particle">
+    <rdfs:label xml:lang="en">particle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nfad14e8a9e9a4b119ebd2b3fefd05e42">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ParticlePOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Particle"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#emphaticPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">emphatic pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">An emphatic pronoun is a personal pronoun that is used to emphasize its referent.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#emphaticPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbPOS">
+    <rdfs:label xml:lang="en">adverb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#FusedPreposition">
+    <rdfs:label xml:lang="en">fused preposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N37dad522abee4feaa2f2b78030a1ac39">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#FusedPrepositionPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#FusedPreposition"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#distinctiveParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">distinctive particle</rdfs:label>
+    <rdfs:comment xml:lang="en">distinctive particle</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#distinctiveParticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#genericNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">generic numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A numeral used to indicate the number of sets/kinds of objects.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#genericNumeral"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#predicativeAdjunct">
+    <rdfs:label xml:lang="en">predicative adjunct</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#adjunct"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#predicativeAdjunct"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessiveAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">possessive adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">An adjective derived from a noun and denoting possession by the object described by the noun.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#reflexivePossessivePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">reflexive possessive pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">A possessive pronoun that refers to the subject as the possessor.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexivePossessivePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Verb">
+    <rdfs:label xml:lang="en">verb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N023d3944abf34885877285285307e029">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Verb"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#colon">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">colon</rdfs:label>
+    <rdfs:comment xml:lang="en">Sign with two vertical points that is used in writing and printing to introduce an explanation, example or quotation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#colon"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#coordinationParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">coordination particle</rdfs:label>
+    <rdfs:comment xml:lang="en">particle for coordination</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#coordinationParticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#presentParticipleAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">present participle adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Adjective based on a present participle.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#presentParticipleAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#fusedPrepositionPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">fused preposition pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">word resulting from the aggregation of a preposition and a pronoun</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPrepositionPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ConjunctionPOS">
+    <rdfs:label xml:lang="en">conjunction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ConjunctionPOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Number">
+    <rdfs:label xml:lang="en">number</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Number"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivalComplementFrame">
+    <rdfs:label xml:lang="en">adjectival complement frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb2">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#predicativeAdjective"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivalComplementFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Finiteness">
+    <rdfs:label xml:lang="en">finiteness</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Finiteness"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame">
+    <example xml:lang="en">the dog BIT the man</example>
+    <rdfs:label xml:lang="en">transitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb280">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb281">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#directObject"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb282">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TransitiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Determiner">
+    <rdfs:label xml:lang="en">determiner</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N3314a5288eeb418b8954d3f7e2f09049">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#DeterminerPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Determiner"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#cardinalNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">cardinal numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A word denoting a number.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#cardinalNumeral"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner not capable of identification.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteDeterminer"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NominalComplementFrame">
+    <rdfs:label xml:lang="en">nominal complement frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb192">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb193">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#predicativeNominative"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NominalComplementFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NounFrame">
+    <rdfs:label xml:lang="en">noun frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#numeralFraction">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">numeral fraction</rdfs:label>
+    <rdfs:comment xml:lang="en">Word used to denote the denominator of a fraction.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#numeralFraction"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#questionMark">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">question mark</rdfs:label>
+    <rdfs:comment xml:lang="en">Sign used to express a question.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#questionMark"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#generalAdverb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">general adverb</rdfs:label>
+    <rdfs:comment xml:lang="en">Adverb belonging to the general class of adverbs</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#generalAdverb"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#superlativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">superlative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle expressing superlative degree. Superlative is the comparison between more than two entities and contrasts with comparative where only two entities are involved and positive where no comparison is implied.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#superlativeParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#RaisableArgument">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticArgument"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#point">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdfs:comment xml:lang="en">Sign (.) used to expresses the end of a sentence or an abbreviation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#point"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteMultiplicativeNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite multiplicative numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A word indicating imprecise number of times something happened.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteMultiplicativeNumeral"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#declarativeClause">
+    <rdfs:label xml:lang="en">declarative clause</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#declarativeClause"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#comma">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">comma</rdfs:label>
+    <rdfs:comment xml:lang="en">Mark (,) used in writing to show a short pause or to separate items in a list.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#comma"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#closeParenthesis">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">close parenthesis</rdfs:label>
+    <rdfs:comment xml:lang="en">End of a parenthesis pair.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#closeParenthesis"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#futureParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">future particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used in order to express future.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#futureParticle"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech">
+    <rdfs:label xml:lang="en">part of speech</rdfs:label>
+    <rdfs:comment xml:lang="en">A category assigned to a word based on its grammatical and semantic properties. // Term used to describe how a particular word is used in a sentence.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#morphosyntacticProperty"/>
+    <rdfs:range rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#partOfSpeech"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Cliticness">
+    <rdfs:label xml:lang="en">cliticness</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Cliticness"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#GerundFrame">
+    <rdfs:label xml:lang="en">gerund frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Indicates one of the arguments is a gerund clause</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb107">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb108">
+            <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+            <owl:someValuesFrom>
+              <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#GerundClause">
+                <rdfs:label xml:lang="en">gerund clause</rdfs:label>
+                <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#ClausalArg"/>
+                <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gerund"/>
+              </rdf:Description>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#GerundFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#personalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun referring a person.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#personalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#reflexivePersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">reflexive personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">personal pronoun which is reflexive</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexivePersonalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adverbialPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">adverbial pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">()</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#adverbialPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Person">
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitivePPFrame">
+    <example xml:lang="en">she ADDED salt TO the stew</example>
+    <rdfs:label xml:lang="en">transitive pp frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb304">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PPFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TransitiveFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TransitivePPFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#reciprocalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">reciprocal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun expressing mutual relationship.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#reciprocalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#openParenthesis">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">open parenthesis</rdfs:label>
+    <rdfs:comment xml:lang="en">Beginning of a pair of parenthesis.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#openParenthesis"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#pastParticipleAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">past participle adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Adjective based on a past participle.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#pastParticipleAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#negativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">negative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun used in a context of a negation or for expressing a negation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#negativePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#RaisableSubject">
+    <owl:equivalentClass>
+      <rdf:Description rdf:nodeID="n9aabec4a1b7344398b24acbe91b82fadb28">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#RaisableArgument"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Subject"/>
+        </owl:intersectionOf>
+      </rdf:Description>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#relativeDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">relative determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner related to a referent.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#relativeDeterminer"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Control">
+    <rdfs:label xml:lang="en">control</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <rdfs:comment xml:lang="en">Control indicates how a an argument from a main clause will be utilized in a subclause. This class includes both control structures and raising structures</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Control"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#existentialPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">existential pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">pronoun that indicates the existence of something or someone</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#existentialPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePostPositiveFrame">
+    <example xml:lang="en">that is something INTERESTING</example>
+    <rdfs:label xml:lang="en">adjective post positive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb36">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb37">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#copulativeArg"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb38">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#postPositiveArg"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivePostPositiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#pronominalAdverb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">pronominal adverb</rdfs:label>
+    <rdfs:comment xml:lang="en">adverb formed in replacement of a preposition and a pronoun</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#pronominalAdverb"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Animacy">
+    <rdfs:label xml:lang="en">animacy</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Animacy"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#relativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">relative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">relative particle</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#relativeParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PPFrame">
+    <rdfs:label xml:lang="en">pp frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb209">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PrepositionalFrame"/>
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PPFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DeclarativeFrame">
+    <rdfs:label xml:lang="en">declarative frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Declarative frames take a clause as an argument, this argument is marker with the declarative conjunction (&amp;quot;that&amp;quot; in English)</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb72">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb73">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#declarativeClause"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DeclarativeFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Preposition">
+    <rdfs:label xml:lang="en">preposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Adposition"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Nbbb8f9f3e7424a359557449ede31b885">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:hasValue rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#preposition"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Preposition"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#exclamativeDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">exclamative determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner expressing an emotional utterance and marked with a strong intonation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativeDeterminer"/>
+  </owl:Thing>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeInfinitiveClause">
+    <rdfs:label xml:lang="en">interrogative infinitive clause</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeInfinitiveClause"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame">
+    <rdfs:label xml:lang="en">adjective frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#multiplicativeNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">multiplicative numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A word that expresses the number of times something happened.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#multiplicativeNumeral"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#reflexiveDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">reflexive determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner that refers to the same entity.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#reflexiveDeterminer"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#modal">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">modal</rdfs:label>
+    <rdfs:comment xml:lang="en">Verb form that is usually used with another verb to express ideas such as possibilities, permission, or intention.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#modal"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#unclassifiedParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">unclassified particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle that is not covered by other sorts of particle definitions.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#unclassifiedParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType">
+    <rdfs:label xml:lang="en">term type</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermType"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#fullFormFor">
+    <rdfs:label xml:lang="en">full form for</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/vartrans#lexicalRel"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdfs:comment xml:lang="en">A linking element used to identify a relation between any full form of a term or lexical unit and its abbreviated form.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#contractionFor"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#fullFormFor"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#properNoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">proper noun</rdfs:label>
+    <rdfs:comment xml:lang="en">A noun or adjective denoting a single object. // Noun that is the name of a specific individual, place, or object.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#properNoun"/>
+  </owl:Thing>
+  <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Adjunct">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="n9aabec4a1b7344398b24acbe91b82fadb1">
+        <owl:onProperty rdf:resource="http://www.w3.org/ns/lemon/synsem#optional"/>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticArgument"/>
+    <rdfs:label xml:lang="en">adjunct</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Adjunct"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ArbitraryControl">
+    <rdfs:label xml:lang="en">arbitrary control</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Control"/>
+    <rdfs:comment xml:lang="en">Indicates either the subject or object of the main clause may be the omitted argument of the subclause</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ArbitraryControl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Adverb">
+    <rdfs:label xml:lang="en">adverb</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N9ec8b8d81afd4009843a46d1ddb8f9b5">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdverbPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Adverb"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#allusivePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">allusive pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun that refers to something characterized by allusions.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#allusivePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Negative">
+    <rdfs:label xml:lang="en">negative</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Negative"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeCardinalNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative cardinal numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">An interrogative/relative word used to ask about quantity.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeCardinalNumeral"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#RaisingSubject">
+    <rdfs:label xml:lang="en">raising subject</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#Control"/>
+    <rdfs:comment xml:lang="en">Indicates the syntactic subject of the main clause is in fact the subject of the subclause. The main clause should then be interpreted as being impersonal.</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb223">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#RaisableSubject"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#RaisingSubject"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DeterminerPOS">
+    <rdfs:label xml:lang="en">determiner</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DeterminerPOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Frequency">
+    <rdfs:label xml:lang="en">frequency</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Frequency"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#bullet">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">bullet</rdfs:label>
+    <rdfs:comment xml:lang="en">Sign used to mark an item in a list.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#bullet"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#subordinatingConjunction">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">subordinating conjunction</rdfs:label>
+    <rdfs:comment xml:lang="en">Conjunction that links constructions by making one of them a constituent of another. The subordinating conjunction typically marks the incorporated constituent.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#subordinatingConjunction"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#irreflexivePersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">irreflexive personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">personal pronoun which is not reflexive</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#irreflexivePersonalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#possessiveDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">possessive determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner that expresses ownership.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#possessiveDeterminer"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NounPredicateFrame">
+    <example xml:lang="en">he is a MAN</example>
+    <rdfs:label xml:lang="en">noun predicate frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#NounFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb205">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NounFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb206">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#copulativeArg"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPredicateFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#negativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">negative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used to express negation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#negativeParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TemporalQualifier">
+    <rdfs:label xml:lang="en">temporal qualifier</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TemporalQualifier"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefinitePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun that does not allow reference.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefinitePronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#generalizationWord">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">generalization word</rdfs:label>
+    <rdfs:comment xml:lang="en">A word that does not carry its own meaning but generalizes the meaning of a neighboring word, adding the &amp;quot;etc.&amp;quot; sense.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#generalizationWord"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#coordinatingConjunction">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">coordinating conjunction</rdfs:label>
+    <rdfs:comment xml:lang="en">Conjunction that links constituents.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#coordinatingConjunction"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#deficientVerb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">deficient verb</rdfs:label>
+    <rdfs:comment xml:lang="en">verb lacking certain morphosyntactic properties</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#deficientVerb"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adjective-i">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">adjective-i</rdfs:label>
+    <rdfs:comment xml:lang="en">Deverbal adjective in Japanese ending with the '-i' suffix in dictionary form</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#adjective-i"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#impersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">impersonal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun lacking person referent.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#impersonalPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#FusedPrepositionPOS">
+    <rdfs:label xml:lang="en">fused preposition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#FusedPrepositionPOS"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteCardinalNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite cardinal numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">A word used to express imprecise quantity.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteCardinalNumeral"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ReciprocalFrame">
+    <example xml:lang="en">mary and john MET</example>
+    <rdfs:label xml:lang="en">reciprocal frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb224">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb225">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ReciprocalFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PrepositionFrame">
+    <rdfs:label xml:lang="en">preposition frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/synsem#SyntacticFrame"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PrepositionFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#adjective-na">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">adjective-na</rdfs:label>
+    <rdfs:comment xml:lang="en">Denominal adjectives in Japanese formed from a noun plus the particle 'na'</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#adjective-na"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SubjectlessFrame">
+    <rdfs:label xml:lang="en">subjectless frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb253">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb254">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#SubjectlessFrame"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeClause">
+    <rdfs:label xml:lang="en">interrogative clause</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/lemon/synsem#synArg"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#clausalArg"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeClause"/>
+  </owl:ObjectProperty>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#qualifierAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">qualifier adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Adjective used to qualify.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#qualifierAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#affirmativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">affirmative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used to express affirmation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#affirmativeParticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#mainVerb">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">main verb</rdfs:label>
+    <rdfs:comment xml:lang="en">Main verb in contrast to a modal or an auxiliary.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#mainVerb"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#fusedPrepositionDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">fused preposition determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">word resulting from the aggregation of a proposition and a determiner</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#fusedPrepositionDeterminer"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#indefiniteArticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">indefinite article</rdfs:label>
+    <rdfs:comment xml:lang="en">Article not capable of expressing identification.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#indefiniteArticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#weakPersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">weak personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Personal pronoun that cannot occupy the position after a preposition and/or reinforce a strong personal pronoun.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#weakPersonalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#suspensionPoints">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">suspension points</rdfs:label>
+    <rdfs:comment xml:lang="en">Sequence of three dots having the same meaning as &amp;quot;et cetera&amp;quot; (full form) or &amp;quot;etc&amp;quot; (abbreviated form).</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#suspensionPoints"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeMultiplicativeNumeral">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative multiplicative numeral</rdfs:label>
+    <rdfs:comment xml:lang="en">An interrogative/relative word used to ask about the number of times something happened.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeMultiplicativeNumeral"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ModificationType">
+    <rdfs:label xml:lang="en">modification type</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ModificationType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Symbol">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <rdfs:label xml:lang="en">symbol</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="Neaff09f9ca8f49eba6ff73912c980df2">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#SymbolPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Symbol"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Aspect">
+    <rdfs:label xml:lang="en">aspect</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Aspect"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Noun">
+    <rdfs:label xml:lang="en">noun</rdfs:label>
+    <rdfs:label xml:lang="de">Substantiv</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N4fa103e603b34b318e9b528da311e21d">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#NounPOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Noun"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NumeralPOS">
+    <rdfs:label xml:lang="en">numeral</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NumeralPOS"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#affixedPersonalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">affixed personal pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Personnal pronoun that is affixed, i.e. added as an affix to another word.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#affixedPersonalPronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#auxiliary">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">auxiliary</rdfs:label>
+    <rdfs:comment xml:lang="en">a verb that adds functional or grammatical meaning to the clause in which it appears, so as to express tense, aspect, modality, voice, emphasis, etc.</rdfs:comment>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NounPOS">
+    <rdfs:label xml:lang="en">noun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#circumposition">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">circumposition</rdfs:label>
+    <rdfs:comment xml:lang="en">Adposition which consists of two parts which are positioned ahead and after the adpositional foci.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#circumposition"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#copula">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">copula</rdfs:label>
+    <rdfs:comment xml:lang="en">Special word that combines the subject of a sentence and its description.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#copula"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Tense">
+    <rdfs:label xml:lang="en">tense</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Tense"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#demonstrativeDeterminer">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">demonstrative determiner</rdfs:label>
+    <rdfs:comment xml:lang="en">Determiner used to point to an entity in the situation or elsewhere in a sentence.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#demonstrativeDeterminer"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeFrame">
+    <rdfs:label xml:lang="en">interrogative frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Indicates the frame has a subframe indicated with the appropriate interrogative (e.g., &amp;quot;who&amp;quot;, &amp;quot;where&amp;quot;, &amp;quot;how&amp;quot;)</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb136">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb137">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeClause"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#InterrogativeFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#DitransitiveFrame">
+    <example xml:lang="de">mein vater SCHREIBT ihr einen brief</example>
+    <example xml:lang="en">i GAVE him it</example>
+    <rdfs:label xml:lang="en">ditransitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb82">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb83">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#directObject"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb84">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#indirectObject"/>
+          </owl:Restriction>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb85">
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#subject"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#DitransitiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#participleAdjective">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">participle adjective</rdfs:label>
+    <rdfs:comment xml:lang="en">Adjective based on a verb.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#participleAdjective"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#exclamativePoint">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">exclamative point</rdfs:label>
+    <rdfs:comment xml:lang="en">Special sign (!) usually used in writing to mark exclamation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativePoint"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun used to express a question.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativePronoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#presentativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">presentative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">pronoun that identify the current locative or temporal situation</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#presentativePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveAttributiveFrame">
+    <example xml:lang="en">the RED ball</example>
+    <rdfs:label xml:lang="en">adjective attributive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb9">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectiveFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb10">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#attributiveArg"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectiveAttributiveFrame"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#TermElement">
+    <rdfs:label xml:lang="en">term element</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#TermElement"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#punctuation">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">punctuation</rdfs:label>
+    <rdfs:comment xml:lang="en">Graphical mark used either at word level to indicate an abbreviation or at a text level to separate phrases or sentences.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#punctuation"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#definiteArticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">definite article</rdfs:label>
+    <rdfs:comment xml:lang="en">Article that allows the reference to a specific, identifiable entity (or class of entities).</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#definiteArticle"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#slash">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">slash</rdfs:label>
+    <rdfs:comment xml:lang="en">The punctuation sign /</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#slash"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFormMood">
+    <rdfs:label xml:lang="en">verb form mood</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#VerbFormMood"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Degree">
+    <rdfs:label xml:lang="en">degree</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Degree"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Definiteness">
+    <rdfs:label xml:lang="en">definiteness</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Definiteness"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ParticlePOS">
+    <rdfs:label xml:lang="en">particle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ParticlePOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Register">
+    <rdfs:label xml:lang="en">register</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Register"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#exclamativePronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">exclamative pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">Pronoun marked with an emotional utterance and/or a strong intonation.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#exclamativePronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Adjective">
+    <rdfs:label xml:lang="en">adjective</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <owl:equivalentClass>
+      <owl:Restriction rdf:nodeID="N0257a765ca064a2aafc90e803b5296a6">
+        <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#partOfSpeech"/>
+        <owl:someValuesFrom rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#AdjectivePOS"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Adjective"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#preposition">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">preposition</rdfs:label>
+    <rdfs:comment xml:lang="en">Adposition placed at the beginning of a noun phrase.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#preposition"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#InterrogativeInfinitiveFrame">
+    <rdfs:label xml:lang="en">interrogative infinitive frame</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+    <rdfs:comment xml:lang="en">Indicates the frame has an argument that is a clause with both an interrogative and the clause is in the infinitive form</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb140">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#VerbFrame"/>
+          <owl:Restriction rdf:nodeID="n369224d7a5424a2ebbfaaf828045e2cfb141">
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            <owl:onProperty rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeInfinitiveClause"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#InterrogativeInfinitiveFrame"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#conditionalPronoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">conditional pronoun</rdfs:label>
+    <rdfs:comment xml:lang="en">conditional pronoun</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#conditionalPronoun"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#AbbreviatedForm">
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#TermType"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#NormativeAuthorization">
+    <rdfs:label xml:lang="en">normative authorization</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#NormativeAuthorization"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Mood">
+    <rdfs:label xml:lang="en">mood</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Mood"/>
+  </owl:Class>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#relationNoun">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">relation noun</rdfs:label>
+    <rdfs:comment xml:lang="en">relation noun</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#relationNoun"/>
+  </owl:Thing>
+  <owl:Thing rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#interrogativeParticle">
+    <rdf:type rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <rdfs:label xml:lang="en">interrogative particle</rdfs:label>
+    <rdfs:comment xml:lang="en">Particle used to express a question.</rdfs:comment>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#interrogativeParticle"/>
+  </owl:Thing>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#PronounPOS">
+    <rdfs:label xml:lang="en">pronoun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.lexinfo.net/ontology/3.0/lexinfo#PartOfSpeech"/>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#PronounPOS"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#Gender">
+    <rdfs:label xml:lang="en">gender</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#Gender"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#SymbolPOS">
+    <rdfs:label xml:lang="en">symbol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.lexinfo.net/ontology/3.0/lexinfo#ReferentType">
+    <rdfs:label xml:lang="en">referent type</rdfs:label>
+    <owl:priorVersion rdf:resource="http://www.lexinfo.net/ontology/2.0/lexinfo#ReferentType"/>
+  </owl:Class>
+</rdf:RDF>
+
