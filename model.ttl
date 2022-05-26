@@ -93,13 +93,6 @@ emo:isComposedOf rdf:type owl:ObjectProperty ,
 emo:operateNear rdf:type owl:ObjectProperty .
 
 
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#has_MyerBriggs_Personality
-:has_MyerBriggs_Personality rdf:type owl:ObjectProperty ;
-                            rdfs:domain :Narrative_Roles ,
-                                        ma-ont:Agent ;
-                            rdfs:range :MyersBriggsPersonality .
-
-
 ###  http://literary_characters_psycological_profiles.owl#denotes_emotion
 :denotes_emotion rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure> ;
@@ -110,6 +103,12 @@ emo:operateNear rdf:type owl:ObjectProperty .
 :described_by_word rdf:type owl:ObjectProperty ;
                    rdfs:domain ma-ont:Agent ;
                    rdfs:range <http://lemon-model.net/lemon#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality
+:has_MyerBriggs_Personality rdf:type owl:ObjectProperty ;
+                            rdfs:domain ma-ont:Agent ;
+                            rdfs:range :MyersBriggsPersonality .
 
 
 ###  http://literary_characters_psycological_profiles.owl#has_Personality
@@ -995,14 +994,6 @@ emo:vergogna rdf:type owl:NamedIndividual ,
 <http://dbpedia.org/page/Turin> rdf:type owl:NamedIndividual .
 
 
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#INFP
-:INFP rdf:type owl:NamedIndividual ,
-               :feeling ,
-               :introversion ,
-               :intuition ,
-               :perceiving .
-
-
 ###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#'this_is_a_test'
 <http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#'this_is_a_test'> rdf:type owl:NamedIndividual ,
                                                                                                               :Calm_Words .
@@ -1013,14 +1004,23 @@ emo:vergogna rdf:type owl:NamedIndividual ,
                      :Antagonistic .
 
 
+###  http://literary_characters_psycological_profiles.owl#INFP
+:INFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :intuition
+                                                           :perceiving
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
 ###  http://literary_characters_psycological_profiles.owl#Nervous_Personality
 :Nervous_Personality rdf:type owl:NamedIndividual ,
                               :Nervous .
-
-
-###  http://literary_characters_psycological_profiles.owl#anger_speaker
-:anger_speaker rdf:type owl:NamedIndividual ,
-                        :Nervous .
 
 
 [ owl:hasValue "2.0"^^xsd:double
