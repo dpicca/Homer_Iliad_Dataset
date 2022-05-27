@@ -590,6 +590,15 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                   rdfs:subClassOf <http://lemon-model.net/lemon#LexicalSense> .
 
 
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Archetype
+:Archetype rdf:type owl:Class .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Ruler
+:Ruler rdf:type owl:Class ;
+       rdfs:subClassOf :Archetype .
+
+
 ###  http://lemon-model.net/lemon#LexicalSense
 <http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
 
