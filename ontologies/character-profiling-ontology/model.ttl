@@ -15,8 +15,8 @@
 
 <http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> rdf:type owl:Ontology ;
                                                                                      owl:versionIRI <https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl> ;
-                                                                                     owl:imports <http://lemon-model.net/lemon> ,
-                                                                                                 <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> ,
+                                                                                     owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> ,
+                                                                                                 <http://www.w3.org/ns/lemon/ontolex> ,
                                                                                                  ma-ont: ,
                                                                                                  foaf: ;
                                                                                      dc:creator <http://orcid.org/0000-0002-1740-519X> ,
