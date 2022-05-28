@@ -659,7 +659,8 @@ emo:Vigilance rdf:type owl:Class ;
 
 ###  http://arsemotica.di.unito.it/ontology#Word
 emo:Word rdf:type owl:Class ;
-         owl:equivalentClass <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word> .
+         owl:equivalentClass <http://lemon-model.net/lemon#Word> ,
+                             <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word> .
 
 
 ###  http://arsemotica.di.unito.it/ontology#Wordnet_Sense
