@@ -95,8 +95,8 @@ emo:operateNear rdf:type owl:ObjectProperty .
 
 ###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#isCorrelatedWith
 :isCorrelatedWith rdf:type owl:ObjectProperty ;
-                  rdfs:domain :MyersBriggsPersonality ;
-                  rdfs:range :Personality_Profiles .
+                  rdfs:domain :Personality_Profiles ;
+                  rdfs:range :MyersBriggsPersonality .
 
 
 ###  http://literary_characters_psycological_profiles.owl#denotes_emotion
@@ -611,7 +611,21 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Agreeablness
 :Agreeablness rdf:type owl:Class ;
-              rdfs:subClassOf :Personality_Profiles .
+              rdfs:subClassOf :Personality_Profiles ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isCorrelatedWith ;
+                                owl:someValuesFrom :decision
+                              ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Agreeablness ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty :isCorrelatedWith ;
+                         owl:someValuesFrom :decision
+                       ] ;
+   rdfs:comment "NEO-PI Agreableness is correlated with MBTI thinking feeling"
+ ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Anger_Words
@@ -691,7 +705,15 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Conscientiousness
 :Conscientiousness rdf:type owl:Class ;
-                   rdfs:subClassOf :Personality_Profiles .
+                   rdfs:subClassOf :Personality_Profiles ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isCorrelatedWith ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( :decision
+                                                                               :organisation
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Disgust_Words
@@ -701,7 +723,11 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Extraversion
 :Extraversion rdf:type owl:Class ;
-              rdfs:subClassOf :Personality_Profiles .
+              rdfs:subClassOf :Personality_Profiles ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isCorrelatedWith ;
+                                owl:someValuesFrom :energy
+                              ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words
