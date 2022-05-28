@@ -93,17 +93,6 @@ emo:isComposedOf rdf:type owl:ObjectProperty ,
 emo:operateNear rdf:type owl:ObjectProperty .
 
 
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#hasEmotionalCognitiveFunction
-:hasEmotionalCognitiveFunction rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf owl:topObjectProperty .
-
-
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#isCorrelatedWith
-:isCorrelatedWith rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Personality_Profiles ;
-                  rdfs:range :MyersBriggsPersonality .
-
-
 ###  http://literary_characters_psycological_profiles.owl#denotes_emotion
 :denotes_emotion rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure> ;
@@ -114,6 +103,13 @@ emo:operateNear rdf:type owl:ObjectProperty .
 :described_by_word rdf:type owl:ObjectProperty ;
                    rdfs:domain ma-ont:Agent ;
                    rdfs:range <http://lemon-model.net/lemon#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction
+:hasEmotionalCognitiveFunction rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain emo:Emotion ;
+                               rdfs:range :MyersBriggsPersonality .
 
 
 ###  http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality
@@ -127,6 +123,12 @@ emo:operateNear rdf:type owl:ObjectProperty .
                  rdfs:domain :Narrative_Roles ,
                              ma-ont:Agent ;
                  rdfs:range :Personality_Profiles .
+
+
+###  http://literary_characters_psycological_profiles.owl#isCorrelatedWith
+:isCorrelatedWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Personality_Profiles ;
+                  rdfs:range :MyersBriggsPersonality .
 
 
 ###  http://www.w3.org/ns/ma-ont#hasCreator
