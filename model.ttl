@@ -93,6 +93,11 @@ emo:isComposedOf rdf:type owl:ObjectProperty ,
 emo:operateNear rdf:type owl:ObjectProperty .
 
 
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#hasEmotionalCognitiveFunction
+:hasEmotionalCognitiveFunction rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty .
+
+
 ###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#isCorrelatedWith
 :isCorrelatedWith rdf:type owl:ObjectProperty ;
                   rdfs:domain :Personality_Profiles ;
@@ -190,6 +195,14 @@ emo:Amazement rdf:type owl:Class ;
 emo:Anger rdf:type owl:Class ;
           rdfs:subClassOf emo:BasicEmotion ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEmotionalCognitiveFunction ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                      :thinking
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty emo:hasOpposite ;
                             owl:allValuesFrom emo:Terror
                           ] ,
@@ -219,6 +232,14 @@ emo:Annoyance rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Anticipation
 emo:Anticipation rdf:type owl:Class ;
                  rdfs:subClassOf emo:BasicEmotion ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasEmotionalCognitiveFunction ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                             :intuition
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty emo:hasOpposite ;
                                    owl:allValuesFrom emo:Surprise
@@ -309,6 +330,14 @@ emo:Disapproval rdf:type owl:Class ;
 emo:Disgust rdf:type owl:Class ;
             rdfs:subClassOf emo:BasicEmotion ,
                             [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasEmotionalCognitiveFunction ;
+                              owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                        :sensing
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty emo:hasOpposite ;
                               owl:allValuesFrom emo:Trust
                             ] ,
@@ -383,6 +412,14 @@ emo:ItalianWord rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Joy
 emo:Joy rdf:type owl:Class ;
         rdfs:subClassOf emo:BasicEmotion ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEmotionalCognitiveFunction ;
+                          owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                    :feeling
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty emo:hasOpposite ;
                           owl:allValuesFrom emo:Sadness
@@ -475,6 +512,14 @@ emo:Remorse rdf:type owl:Class ;
 emo:Sadness rdf:type owl:Class ;
             rdfs:subClassOf emo:BasicEmotion ,
                             [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasEmotionalCognitiveFunction ;
+                              owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                                        :introversion
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty emo:hasOpposite ;
                               owl:allValuesFrom emo:Joy
                             ] ,
@@ -518,6 +563,14 @@ emo:Submission rdf:type owl:Class ;
 emo:Surprise rdf:type owl:Class ;
              rdfs:subClassOf emo:BasicEmotion ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasEmotionalCognitiveFunction ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                         :intuition
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty emo:hasOpposite ;
                                owl:allValuesFrom emo:Anticipation
                              ] ,
@@ -539,6 +592,14 @@ emo:Surprise rdf:type owl:Class ;
 emo:Terror rdf:type owl:Class ;
            rdfs:subClassOf emo:BasicEmotion ,
                            [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasEmotionalCognitiveFunction ;
+                             owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                       :thinking
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
                              owl:onProperty emo:hasOpposite ;
                              owl:allValuesFrom emo:Anger
                            ] ,
@@ -559,6 +620,14 @@ emo:Terror rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Trust
 emo:Trust rdf:type owl:Class ;
           rdfs:subClassOf emo:BasicEmotion ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEmotionalCognitiveFunction ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                      :sensing
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty emo:hasOpposite ;
                             owl:allValuesFrom emo:Disgust
@@ -820,7 +889,17 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Openness
 :Openness rdf:type owl:Class ;
-          rdfs:subClassOf :Personality_Profiles .
+          rdfs:subClassOf :Personality_Profiles ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isCorrelatedWith ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :decision
+                                                                      :energy
+                                                                      :information
+                                                                      :organisation
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Organized
