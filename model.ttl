@@ -590,15 +590,6 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                   rdfs:subClassOf <http://lemon-model.net/lemon#LexicalSense> .
 
 
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Archetype
-:Archetype rdf:type owl:Class .
-
-
-###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Ruler
-:Ruler rdf:type owl:Class ;
-       rdfs:subClassOf :Archetype .
-
-
 ###  http://lemon-model.net/lemon#LexicalSense
 <http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
 
@@ -649,6 +640,10 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                                                  rdf:type owl:Class
                                                ]
                           ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#Archetype
+:Archetype rdf:type owl:Class .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Ardor_words
@@ -760,7 +755,8 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality
 :MyersBriggsPersonality rdf:type owl:Class ;
-                        owl:disjointWith :Narrative_Roles .
+                        owl:disjointWith :Narrative_Roles ,
+                                         :Personality_Profiles .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Narrative_Roles
@@ -816,6 +812,11 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 ###  http://literary_characters_psycological_profiles.owl#Pleasure_words
 :Pleasure_words rdf:type owl:Class ;
                 rdfs:subClassOf emo:Word .
+
+
+###  http://literary_characters_psycological_profiles.owl#Ruler
+:Ruler rdf:type owl:Class ;
+       rdfs:subClassOf :Archetype .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Sadness_Words
@@ -1001,6 +1002,216 @@ emo:vergogna rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/page/Turin
 <http://dbpedia.org/page/Turin> rdf:type owl:NamedIndividual .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ENFJ
+:ENFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :intuition
+                                                           :judging
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ENFP
+:ENFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :intuition
+                                                           :perceiving
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ENTJ
+:ENTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :intuition
+                                                           :judging
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ENTP
+:ENTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :intuition
+                                                           :perceiving
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ESFJ
+:ESFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :judging
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ESFP
+:ESFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :perceiving
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ESTJ
+:ESTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :judging
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ESTP
+:ESTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :perceiving
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#INFJ
+:INFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :intuition
+                                                           :judging
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#INTJ
+:INTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :intuition
+                                                           :judging
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#INTP
+:INTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :intuition
+                                                           :perceiving
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ISFJ
+:ISFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :judging
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ISFP
+:ISFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :perceiving
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ISTJ
+:ISTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :judging
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#ISTP
+:ISTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :perceiving
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
 
 
 ###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#'this_is_a_test'
