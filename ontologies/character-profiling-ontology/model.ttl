@@ -1636,6 +1636,37 @@ emo:vergogna rdf:type owl:NamedIndividual ,
              ] ;
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate :has_MyerBriggs_Personality ;
+                           swrl:argument1 <urn:swrl:var#x> ;
+                           swrl:argument2 <urn:swrl:var#ISFP>
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate ma-ont:Agent ;
+                           swrl:argument1 <urn:swrl:var#x>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate :described_by_word ;
+                                      swrl:argument1 <urn:swrl:var#x> ;
+                                      swrl:argument2 <urn:swrl:var#z>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate :Sadness_Words ;
+                                                 swrl:argument1 <urn:swrl:var#z>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :has_Personality ;
                            swrl:argument1 <urn:swrl:var#x> ;
                            swrl:argument2 <urn:swrl:var#Introvert>
