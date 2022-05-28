@@ -18,3 +18,15 @@ Les objectifs du projet sont simples et peuvent être divisés en quatre étapes
 - Faire un alignement ontologique entre les deux ontologies
 - Nourrir l'ontologie avec les données
 - Créer des systèmes d'évaluations
+
+## Installer les dépendances
+
+```
+pip install -r requirements.txt
+```
+## Contributors
+
+- [Loïc Aubrays](https://ch.linkedin.com/in/loicaubrays), étudiant
+- Gislain Delavy, étudiant
+- [Marcela Hitrackova](https://ch.linkedin.com/in/marcela-hitrackova-2aa566222), étudiant
+- [Davide Picca](https://www.unil.ch/unisciences/davidepicca), enseignant

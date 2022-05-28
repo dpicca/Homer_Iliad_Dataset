@@ -1,0 +1,5 @@
+# To avoid multiple commits for a little change on this binary files.
+# When the report is finished, remove this .gitignore or
+# git add the_file.pdf
+
+*.pdf
