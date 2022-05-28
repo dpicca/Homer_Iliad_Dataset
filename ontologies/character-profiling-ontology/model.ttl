@@ -15,7 +15,8 @@
 
 <http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> rdf:type owl:Ontology ;
                                                                                      owl:versionIRI <https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl> ;
-                                                                                     owl:imports <http://lemon-model.net/lemon> ,
+                                                                                     owl:imports <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> ,
+                                                                                                 <http://www.w3.org/ns/lemon/ontolex> ,
                                                                                                  ma-ont: ,
                                                                                                  foaf: ;
                                                                                      dc:creator <http://orcid.org/0000-0002-1740-519X> ,
@@ -94,7 +95,7 @@ emo:operateNear rdf:type owl:ObjectProperty .
 
 ###  http://literary_characters_psycological_profiles.owl#denotes_emotion
 :denotes_emotion rdf:type owl:ObjectProperty ;
-                 rdfs:domain emo:Word ;
+                 rdfs:domain <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure> ;
                  rdfs:range emo:Emotion .
 
 
@@ -104,11 +105,30 @@ emo:operateNear rdf:type owl:ObjectProperty .
                    rdfs:range <http://lemon-model.net/lemon#Word> .
 
 
+###  http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction
+:hasEmotionalCognitiveFunction rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
+                               rdfs:domain emo:Emotion ;
+                               rdfs:range :MyersBriggsPersonality .
+
+
+###  http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality
+:has_MyerBriggs_Personality rdf:type owl:ObjectProperty ;
+                            rdfs:domain ma-ont:Agent ;
+                            rdfs:range :MyersBriggsPersonality .
+
+
 ###  http://literary_characters_psycological_profiles.owl#has_Personality
 :has_Personality rdf:type owl:ObjectProperty ;
                  rdfs:domain :Narrative_Roles ,
                              ma-ont:Agent ;
                  rdfs:range :Personality_Profiles .
+
+
+###  http://literary_characters_psycological_profiles.owl#isCorrelatedWith
+:isCorrelatedWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Personality_Profiles ;
+                  rdfs:range :MyersBriggsPersonality .
 
 
 ###  http://www.w3.org/ns/ma-ont#hasCreator
@@ -177,6 +197,14 @@ emo:Amazement rdf:type owl:Class ;
 emo:Anger rdf:type owl:Class ;
           rdfs:subClassOf emo:BasicEmotion ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEmotionalCognitiveFunction ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                      :thinking
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty emo:hasOpposite ;
                             owl:allValuesFrom emo:Terror
                           ] ,
@@ -206,6 +234,14 @@ emo:Annoyance rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Anticipation
 emo:Anticipation rdf:type owl:Class ;
                  rdfs:subClassOf emo:BasicEmotion ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasEmotionalCognitiveFunction ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                             :intuition
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty emo:hasOpposite ;
                                    owl:allValuesFrom emo:Surprise
@@ -296,6 +332,14 @@ emo:Disapproval rdf:type owl:Class ;
 emo:Disgust rdf:type owl:Class ;
             rdfs:subClassOf emo:BasicEmotion ,
                             [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasEmotionalCognitiveFunction ;
+                              owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                        :sensing
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty emo:hasOpposite ;
                               owl:allValuesFrom emo:Trust
                             ] ,
@@ -370,6 +414,14 @@ emo:ItalianWord rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Joy
 emo:Joy rdf:type owl:Class ;
         rdfs:subClassOf emo:BasicEmotion ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEmotionalCognitiveFunction ;
+                          owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                    :feeling
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty emo:hasOpposite ;
                           owl:allValuesFrom emo:Sadness
@@ -462,6 +514,14 @@ emo:Remorse rdf:type owl:Class ;
 emo:Sadness rdf:type owl:Class ;
             rdfs:subClassOf emo:BasicEmotion ,
                             [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasEmotionalCognitiveFunction ;
+                              owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                                        :introversion
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty emo:hasOpposite ;
                               owl:allValuesFrom emo:Joy
                             ] ,
@@ -505,6 +565,14 @@ emo:Submission rdf:type owl:Class ;
 emo:Surprise rdf:type owl:Class ;
              rdfs:subClassOf emo:BasicEmotion ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasEmotionalCognitiveFunction ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                         :intuition
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty emo:hasOpposite ;
                                owl:allValuesFrom emo:Anticipation
                              ] ,
@@ -526,6 +594,14 @@ emo:Surprise rdf:type owl:Class ;
 emo:Terror rdf:type owl:Class ;
            rdfs:subClassOf emo:BasicEmotion ,
                            [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasEmotionalCognitiveFunction ;
+                             owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                                       :thinking
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
                              owl:onProperty emo:hasOpposite ;
                              owl:allValuesFrom emo:Anger
                            ] ,
@@ -546,6 +622,14 @@ emo:Terror rdf:type owl:Class ;
 ###  http://arsemotica.di.unito.it/ontology#Trust
 emo:Trust rdf:type owl:Class ;
           rdfs:subClassOf emo:BasicEmotion ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEmotionalCognitiveFunction ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                                      :sensing
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty emo:hasOpposite ;
                             owl:allValuesFrom emo:Disgust
@@ -574,7 +658,9 @@ emo:Vigilance rdf:type owl:Class ;
 
 
 ###  http://arsemotica.di.unito.it/ontology#Word
-emo:Word rdf:type owl:Class .
+emo:Word rdf:type owl:Class ;
+         owl:equivalentClass <http://lemon-model.net/lemon#Word> ,
+                             <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word> .
 
 
 ###  http://arsemotica.di.unito.it/ontology#Wordnet_Sense
@@ -582,13 +668,41 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                   rdfs:subClassOf <http://lemon-model.net/lemon#LexicalSense> .
 
 
+###  http://lemon-model.net/lemon#LexicalSense
+<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Word
+<http://lemon-model.net/lemon#Word> rdf:type owl:Class .
+
+
 ###  http://lemon-model.net/lemon#generates
-<http://lemon-model.net/lemon#generates> rdfs:subClassOf emo:Lemon_Import .
+<http://lemon-model.net/lemon#generates> rdf:type owl:Class ;
+                                         rdfs:subClassOf emo:Lemon_Import .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Agreeablness
 :Agreeablness rdf:type owl:Class ;
-              rdfs:subClassOf :Personality_Profiles .
+              rdfs:subClassOf :Personality_Profiles ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isCorrelatedWith ;
+                                owl:someValuesFrom :decision
+                              ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Agreeablness ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty :isCorrelatedWith ;
+                         owl:someValuesFrom :decision
+                       ] ;
+   rdfs:comment "NEO-PI Agreableness is correlated with MBTI thinking feeling"
+ ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#Anger_Words
+:Anger_Words rdf:type owl:Class ;
+             rdfs:subClassOf emo:Word .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Antagonistic
@@ -618,6 +732,16 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                                                  rdf:type owl:Class
                                                ]
                           ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#Ardor_words
+:Ardor_words rdf:type owl:Class ;
+             rdfs:subClassOf emo:Word .
+
+
+###  http://literary_characters_psycological_profiles.owl#Calm_Words
+:Calm_Words rdf:type owl:Class ;
+            rdfs:subClassOf emo:Word .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Careless
@@ -653,12 +777,29 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Conscientiousness
 :Conscientiousness rdf:type owl:Class ;
-                   rdfs:subClassOf :Personality_Profiles .
+                   rdfs:subClassOf :Personality_Profiles ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isCorrelatedWith ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( :decision
+                                                                               :organisation
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#Disgust_Words
+:Disgust_Words rdf:type owl:Class ;
+               rdfs:subClassOf emo:Word .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Extraversion
 :Extraversion rdf:type owl:Class ;
-              rdfs:subClassOf :Personality_Profiles .
+              rdfs:subClassOf :Personality_Profiles ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isCorrelatedWith ;
+                                owl:someValuesFrom :energy
+                              ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words
@@ -670,6 +811,11 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 :Extrovert rdf:type owl:Class ;
            rdfs:subClassOf :Extraversion ;
            owl:disjointWith :Introvert .
+
+
+###  http://literary_characters_psycological_profiles.owl#Fear_words
+:Fear_words rdf:type owl:Class ;
+            rdfs:subClassOf emo:Word .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Hero
@@ -700,6 +846,17 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 ###  http://literary_characters_psycological_profiles.owl#Introvert
 :Introvert rdf:type owl:Class ;
            rdfs:subClassOf :Extraversion .
+
+
+###  http://literary_characters_psycological_profiles.owl#Joy_Words
+:Joy_Words rdf:type owl:Class ;
+           rdfs:subClassOf emo:Word .
+
+
+###  http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality
+:MyersBriggsPersonality rdf:type owl:Class ;
+                        owl:disjointWith :Narrative_Roles ,
+                                         :Personality_Profiles .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Narrative_Roles
@@ -735,7 +892,17 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Openness
 :Openness rdf:type owl:Class ;
-          rdfs:subClassOf :Personality_Profiles .
+          rdfs:subClassOf :Personality_Profiles ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isCorrelatedWith ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :decision
+                                                                      :energy
+                                                                      :information
+                                                                      :organisation
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Organized
@@ -750,6 +917,16 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 
 ###  http://literary_characters_psycological_profiles.owl#Personality_Profiles
 :Personality_Profiles rdf:type owl:Class .
+
+
+###  http://literary_characters_psycological_profiles.owl#Pleasure_words
+:Pleasure_words rdf:type owl:Class ;
+                rdfs:subClassOf emo:Word .
+
+
+###  http://literary_characters_psycological_profiles.owl#Sadness_Words
+:Sadness_Words rdf:type owl:Class ;
+               rdfs:subClassOf emo:Word .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words
@@ -780,6 +957,96 @@ emo:Wordnet_Sense rdf:type owl:Class ;
                          ] .
 
 
+###  http://literary_characters_psycological_profiles.owl#ardeur
+:ardeur rdf:type owl:Class ;
+        rdfs:subClassOf emo:ComplexEmotion ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty emo:isComposedOf ;
+                          owl:someValuesFrom emo:Ecstacy
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty emo:isComposedOf ;
+                          owl:someValuesFrom emo:Interest
+                        ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#decision
+:decision rdf:type owl:Class ;
+          rdfs:subClassOf :MyersBriggsPersonality .
+
+
+###  http://literary_characters_psycological_profiles.owl#energy
+:energy rdf:type owl:Class ;
+        rdfs:subClassOf :MyersBriggsPersonality .
+
+
+###  http://literary_characters_psycological_profiles.owl#extraversion
+:extraversion rdf:type owl:Class ;
+              rdfs:subClassOf :energy ;
+              owl:disjointWith :introversion .
+
+
+###  http://literary_characters_psycological_profiles.owl#feeling
+:feeling rdf:type owl:Class ;
+         rdfs:subClassOf :decision ;
+         owl:disjointWith :thinking .
+
+
+###  http://literary_characters_psycological_profiles.owl#information
+:information rdf:type owl:Class ;
+             rdfs:subClassOf :MyersBriggsPersonality .
+
+
+###  http://literary_characters_psycological_profiles.owl#introversion
+:introversion rdf:type owl:Class ;
+              rdfs:subClassOf :energy .
+
+
+###  http://literary_characters_psycological_profiles.owl#intuition
+:intuition rdf:type owl:Class ;
+           rdfs:subClassOf :information ;
+           owl:disjointWith :sensing .
+
+
+###  http://literary_characters_psycological_profiles.owl#judging
+:judging rdf:type owl:Class ;
+         rdfs:subClassOf :organisation ;
+         owl:disjointWith :perceiving .
+
+
+###  http://literary_characters_psycological_profiles.owl#organisation
+:organisation rdf:type owl:Class ;
+              rdfs:subClassOf :MyersBriggsPersonality .
+
+
+###  http://literary_characters_psycological_profiles.owl#perceiving
+:perceiving rdf:type owl:Class ;
+            rdfs:subClassOf :organisation .
+
+
+###  http://literary_characters_psycological_profiles.owl#plaisir
+:plaisir rdf:type owl:Class ;
+         rdfs:subClassOf emo:ComplexEmotion ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty emo:isComposedOf ;
+                           owl:someValuesFrom emo:Amazement
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty emo:isComposedOf ;
+                           owl:someValuesFrom emo:Joy
+                         ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#sensing
+:sensing rdf:type owl:Class ;
+         rdfs:subClassOf :information .
+
+
+###  http://literary_characters_psycological_profiles.owl#thinking
+:thinking rdf:type owl:Class ;
+          rdfs:subClassOf :decision .
+
+
 ###  http://org.semanticweb.owlapi/error#Error1
 <http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class ;
                                              rdfs:subClassOf emo:Lemon_Import .
@@ -789,6 +1056,8 @@ emo:Wordnet_Sense rdf:type owl:Class ;
 <http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class ;
                                              rdfs:subClassOf emo:Lemon_Import .
 
+
+###  http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word
 
 ###  http://purl.org/dc/terms/Agent
 <http://purl.org/dc/terms/Agent> owl:equivalentClass ma-ont:Agent .
@@ -840,9 +1109,238 @@ emo:vergogna rdf:type owl:NamedIndividual ,
 <http://dbpedia.org/page/Turin> rdf:type owl:NamedIndividual .
 
 
+###  http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#'this_is_a_test'
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#'this_is_a_test'> rdf:type owl:NamedIndividual ,
+                                                                                                              :Calm_Words .
+
+
 ###  http://literary_characters_psycological_profiles.owl#Antagonism
 :Antagonism rdf:type owl:NamedIndividual ,
                      :Antagonistic .
+
+
+###  http://literary_characters_psycological_profiles.owl#ENFJ
+:ENFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :intuition
+                                                           :judging
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ENFP
+:ENFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :intuition
+                                                           :perceiving
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ENTJ
+:ENTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :intuition
+                                                           :judging
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ENTP
+:ENTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :intuition
+                                                           :perceiving
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ESFJ
+:ESFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :judging
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ESFP
+:ESFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :feeling
+                                                           :perceiving
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ESTJ
+:ESTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :judging
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ESTP
+:ESTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :extraversion
+                                                           :perceiving
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#INFJ
+:INFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :intuition
+                                                           :judging
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#INFP
+:INFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :intuition
+                                                           :perceiving
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#INTJ
+:INTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :intuition
+                                                           :judging
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#INTP
+:INTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :intuition
+                                                           :perceiving
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ISFJ
+:ISFJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :judging
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ISFP
+:ISFP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :feeling
+                                                           :introversion
+                                                           :perceiving
+                                                           :sensing
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ISTJ
+:ISTJ rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :judging
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#ISTP
+:ISTP rdf:type owl:NamedIndividual ,
+               [ rdf:type owl:Restriction ;
+                 owl:onProperty :has_MyerBriggs_Personality ;
+                 owl:someValuesFrom [ owl:intersectionOf ( :introversion
+                                                           :perceiving
+                                                           :sensing
+                                                           :thinking
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ]
+               ] .
 
 
 ###  http://literary_characters_psycological_profiles.owl#Nervous_Personality
@@ -881,6 +1379,35 @@ emo:vergogna rdf:type owl:NamedIndividual ,
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( emo:Aggressiveness
+                emo:Awe
+                emo:Contempt
+                emo:Disapproval
+                emo:Love
+                emo:Optimism
+                emo:Remorse
+                emo:Submission
+                :ardeur
+                :plaisir
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( emo:Aggressiveness
+                emo:Awe
+                emo:Contempt
+                emo:Disapproval
+                emo:Love
+                emo:Optimism
+                emo:Remorse
+                emo:Submission
+                :plaisir
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( emo:Anger
                 emo:Anticipation
                 emo:Disgust
@@ -897,11 +1424,93 @@ emo:vergogna rdf:type owl:NamedIndividual ,
 #    Rules
 #################################################################
 
+<urn:swrl:var#x> rdf:type swrl:Variable .
+
+<urn:swrl:var#z> rdf:type swrl:Variable .
+
+<urn:swrl:var#y> rdf:type swrl:Variable .
+
+<urn:swrl:var#Introvert> rdf:type swrl:Variable .
+
+<urn:swrl:var#INFP> rdf:type swrl:Variable .
+
 <urn:swrl#x> rdf:type swrl:Variable .
 
 <urn:swrl#z> rdf:type swrl:Variable .
 
-<urn:swrl#Introvert> rdf:type swrl:Variable .
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure> ;
+                           swrl:argument1 <urn:swrl:var#x>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate :denotes_emotion ;
+                                      swrl:argument1 <urn:swrl:var#x> ;
+                                      swrl:argument2 <urn:swrl:var#z>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate emo:Anger ;
+                                                 swrl:argument1 <urn:swrl:var#z>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate ma-ont:Agent ;
+                           swrl:argument1 <urn:swrl:var#y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate :has_Personality ;
+                                      swrl:argument1 <urn:swrl:var#y> ;
+                                      swrl:argument2 <urn:swrl:var#Introvert>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+[ rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure> ;
+                           swrl:argument1 <urn:swrl:var#x>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate :denotes_emotion ;
+                                      swrl:argument1 <urn:swrl:var#x> ;
+                                      swrl:argument2 <urn:swrl:var#z>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate emo:Sadness ;
+                                                 swrl:argument1 <urn:swrl:var#z>
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate ma-ont:Agent ;
+                           swrl:argument1 <urn:swrl:var#y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate :has_MyerBriggs_Personality ;
+                                      swrl:argument1 <urn:swrl:var#y> ;
+                                      swrl:argument2 <urn:swrl:var#INFP>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
 
 [ rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
@@ -938,18 +1547,18 @@ emo:vergogna rdf:type owl:NamedIndividual ,
    swrl:body [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:ClassAtom ;
                            swrl:classPredicate ma-ont:Agent ;
-                           swrl:argument1 <urn:swrl#x>
+                           swrl:argument1 <urn:swrl:var#x>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                                       swrl:propertyPredicate :described_by_word ;
-                                      swrl:argument1 <urn:swrl#x> ;
-                                      swrl:argument2 <urn:swrl#z>
+                                      swrl:argument1 <urn:swrl:var#x> ;
+                                      swrl:argument2 <urn:swrl:var#z>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:ClassAtom ;
                                                  swrl:classPredicate :Introversion_denoting_Word ;
-                                                 swrl:argument1 <urn:swrl#z>
+                                                 swrl:argument1 <urn:swrl:var#z>
                                                ] ;
                                      rdf:rest rdf:nil
                                    ]
@@ -958,8 +1567,8 @@ emo:vergogna rdf:type owl:NamedIndividual ,
    swrl:head [ rdf:type swrl:AtomList ;
                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
                            swrl:propertyPredicate :has_Personality ;
-                           swrl:argument1 <urn:swrl#x> ;
-                           swrl:argument2 <urn:swrl#Introvert>
+                           swrl:argument1 <urn:swrl:var#x> ;
+                           swrl:argument2 <urn:swrl:var#Introvert>
                          ] ;
                rdf:rest rdf:nil
              ]

@@ -15,10 +15,13 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:emoart="http://arsemotica.di.unito.it/artifacts#"
-     xmlns:ma-ont="http://www.w3.org/ns/ma-ont#">
+     xmlns:ma-ont="http://www.w3.org/ns/ma-ont#"
+     xmlns:nif-core="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
     <owl:Ontology rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl"/>
+        <owl:imports rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ma-ont#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
@@ -144,7 +147,7 @@
     <!-- http://literary_characters_psycological_profiles.owl#denotes_emotion -->
 
     <owl:ObjectProperty rdf:about="http://literary_characters_psycological_profiles.owl#denotes_emotion">
-        <rdfs:domain rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
+        <rdfs:domain rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure"/>
         <rdfs:range rdf:resource="http://arsemotica.di.unito.it/ontology#Emotion"/>
     </owl:ObjectProperty>
     
@@ -159,12 +162,40 @@
     
 
 
+    <!-- http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction -->
+
+    <owl:ObjectProperty rdf:about="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://arsemotica.di.unito.it/ontology#Emotion"/>
+        <rdfs:range rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality -->
+
+    <owl:ObjectProperty rdf:about="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+        <rdfs:range rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://literary_characters_psycological_profiles.owl#has_Personality -->
 
     <owl:ObjectProperty rdf:about="http://literary_characters_psycological_profiles.owl#has_Personality">
         <rdfs:domain rdf:resource="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
         <rdfs:range rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#isCorrelatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://literary_characters_psycological_profiles.owl#isCorrelatedWith">
+        <rdfs:domain rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+        <rdfs:range rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </owl:ObjectProperty>
     
 
@@ -280,6 +311,19 @@
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
                 <owl:allValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Terror"/>
             </owl:Restriction>
@@ -325,6 +369,19 @@
 
     <owl:Class rdf:about="http://arsemotica.di.unito.it/ontology#Anticipation">
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
@@ -465,6 +522,19 @@
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
                 <owl:allValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Trust"/>
             </owl:Restriction>
@@ -580,6 +650,19 @@
 
     <owl:Class rdf:about="http://arsemotica.di.unito.it/ontology#Joy">
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
@@ -723,6 +806,19 @@
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
                 <owl:allValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Joy"/>
             </owl:Restriction>
@@ -790,6 +886,19 @@
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
                 <owl:allValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Anticipation"/>
             </owl:Restriction>
@@ -823,6 +932,19 @@
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
                 <owl:allValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Anger"/>
             </owl:Restriction>
@@ -854,6 +976,19 @@
 
     <owl:Class rdf:about="http://arsemotica.di.unito.it/ontology#Trust">
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#BasicEmotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#hasOpposite"/>
@@ -899,7 +1034,10 @@
 
     <!-- http://arsemotica.di.unito.it/ontology#Word -->
 
-    <owl:Class rdf:about="http://arsemotica.di.unito.it/ontology#Word"/>
+    <owl:Class rdf:about="http://arsemotica.di.unito.it/ontology#Word">
+        <owl:equivalentClass rdf:resource="http://lemon-model.net/lemon#Word"/>
+        <owl:equivalentClass rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word"/>
+    </owl:Class>
     
 
 
@@ -935,6 +1073,31 @@
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Agreeablness">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://literary_characters_psycological_profiles.owl#decision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://literary_characters_psycological_profiles.owl#decision"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>NEO-PI Agreableness is correlated with MBTI thinking feeling</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Anger_Words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Anger_Words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
     </owl:Class>
     
 
@@ -979,6 +1142,22 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Ardor_words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Ardor_words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Calm_Words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Calm_Words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
     </owl:Class>
     
 
@@ -1036,6 +1215,27 @@
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Conscientiousness">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#decision"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#organisation"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Disgust_Words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Disgust_Words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
     </owl:Class>
     
 
@@ -1044,6 +1244,12 @@
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Extraversion">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://literary_characters_psycological_profiles.owl#energy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1061,6 +1267,14 @@
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Extrovert">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Extraversion"/>
         <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#Introvert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Fear_words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Fear_words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
     </owl:Class>
     
 
@@ -1106,6 +1320,23 @@
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Introvert">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Extraversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Joy_Words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Joy_Words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality">
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </owl:Class>
     
 
@@ -1163,6 +1394,21 @@
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Openness">
         <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#decision"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#energy"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#information"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#organisation"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1186,6 +1432,22 @@
     <!-- http://literary_characters_psycological_profiles.owl#Personality_Profiles -->
 
     <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Pleasure_words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Pleasure_words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#Sadness_Words -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#Sadness_Words">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Word"/>
+    </owl:Class>
     
 
 
@@ -1232,6 +1494,146 @@
     
 
 
+    <!-- http://literary_characters_psycological_profiles.owl#ardeur -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#ardeur">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#ComplexEmotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Ecstacy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Interest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#decision -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#decision">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#energy -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#energy">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#extraversion -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#extraversion">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#energy"/>
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#introversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#feeling -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#feeling">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#decision"/>
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#thinking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#information -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#information">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#introversion -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#introversion">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#intuition -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#intuition">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#information"/>
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#sensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#judging -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#judging">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#organisation"/>
+        <owl:disjointWith rdf:resource="http://literary_characters_psycological_profiles.owl#perceiving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#organisation -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#organisation">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#perceiving -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#perceiving">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#plaisir -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#plaisir">
+        <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#ComplexEmotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Amazement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://arsemotica.di.unito.it/ontology#isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://arsemotica.di.unito.it/ontology#Joy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#sensing -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#sensing">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#thinking -->
+
+    <owl:Class rdf:about="http://literary_characters_psycological_profiles.owl#thinking">
+        <rdfs:subClassOf rdf:resource="http://literary_characters_psycological_profiles.owl#decision"/>
+    </owl:Class>
+    
+
+
     <!-- http://org.semanticweb.owlapi/error#Error1 -->
 
     <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1">
@@ -1245,6 +1647,12 @@
     <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2">
         <rdfs:subClassOf rdf:resource="http://arsemotica.di.unito.it/ontology#Lemon_Import"/>
     </owl:Class>
+    
+
+
+    <!-- http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word -->
+
+    <rdf:Description rdf:about="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Word"/>
     
 
 
@@ -1332,10 +1740,370 @@
     
 
 
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#&apos;this_is_a_test&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#&apos;this_is_a_test&apos;">
+        <rdf:type rdf:resource="http://literary_characters_psycological_profiles.owl#Calm_Words"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://literary_characters_psycological_profiles.owl#Antagonism -->
 
     <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#Antagonism">
         <rdf:type rdf:resource="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ENFJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ENFJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ENFP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ENFP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ENTJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ENTJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ENTP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ENTP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ESFJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ESFJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ESFP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ESFP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ESTJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ESTJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ESTP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ESTP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#INFJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#INFJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#INFP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#INFP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#INTJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#INTJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#INTP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#INTP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#intuition"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ISFJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ISFJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ISFP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ISFP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#feeling"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ISTJ -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ISTJ">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#judging"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://literary_characters_psycological_profiles.owl#ISTP -->
+
+    <owl:NamedIndividual rdf:about="http://literary_characters_psycological_profiles.owl#ISTP">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#introversion"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#sensing"/>
+                            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#thinking"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
     </owl:NamedIndividual>
     
 
@@ -1392,6 +2160,35 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Aggressiveness"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Awe"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Contempt"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Disapproval"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Love"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Optimism"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Remorse"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Submission"/>
+            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#ardeur"/>
+            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#plaisir"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Aggressiveness"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Awe"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Contempt"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Disapproval"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Love"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Optimism"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Remorse"/>
+            <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Submission"/>
+            <rdf:Description rdf:about="http://literary_characters_psycological_profiles.owl#plaisir"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Anger"/>
             <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Anticipation"/>
             <rdf:Description rdf:about="http://arsemotica.di.unito.it/ontology#Disgust"/>
@@ -1413,14 +2210,160 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Introvert">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#INFP">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#x">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#z">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#Introvert">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://arsemotica.di.unito.it/ontology#Anger"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#Introvert"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://arsemotica.di.unito.it/ontology#Sadness"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#INFP"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -1486,7 +2429,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1496,8 +2439,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#described_by_word"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1507,7 +2450,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1524,8 +2467,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#Introvert"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Introvert"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
