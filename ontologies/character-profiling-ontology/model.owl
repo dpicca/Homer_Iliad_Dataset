@@ -21,7 +21,7 @@
      xmlns:nif-core="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
     <owl:Ontology rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.owl"/>
-        <owl:imports rdf:resource="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
+        <owl:imports rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ma-ont#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
@@ -1684,6 +1684,7 @@
     <!-- http://arsemotica.di.unito.it/artifacts#Anger -->
 
     <owl:NamedIndividual rdf:about="http://arsemotica.di.unito.it/artifacts#Anger">
+        <rdf:type rdf:resource="http://arsemotica.di.unito.it/ontology#Anger"/>
         <owl:sameAs rdf:resource="http://dbpedia.org/page/Anger"/>
         <emo:hasOpposite rdf:resource="http://arsemotica.di.unito.it/artifacts#Love"/>
     </owl:NamedIndividual>
@@ -1737,6 +1738,63 @@
     <!-- http://dbpedia.org/page/Turin -->
 
     <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Turin"/>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Ardeur -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Ardeur">
+        <rdf:type rdf:resource="http://literary_characters_psycological_profiles.owl#ardeur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Disgust -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Disgust">
+        <rdf:type rdf:resource="http://arsemotica.di.unito.it/ontology#Disgust"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Joy -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Joy">
+        <rdf:type rdf:resource="http://arsemotica.di.unito.it/ontology#Joy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Plaisir -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Plaisir">
+        <rdf:type rdf:resource="http://literary_characters_psycological_profiles.owl#plaisir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Sadness -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Sadness">
+        <rdf:type rdf:resource="http://arsemotica.di.unito.it/ontology#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Terror -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Terror">
+        <rdf:type rdf:resource="http://arsemotica.di.unito.it/ontology#Terror"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#speech-test -->
+
+    <owl:NamedIndividual rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#speech-test">
+        <rdf:type rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure"/>
+        <denotes_emotion rdf:resource="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#Joy"/>
+    </owl:NamedIndividual>
     
 
 
@@ -2219,10 +2277,13 @@
     <rdf:Description rdf:about="urn:swrl:var#y">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#Introvert">
+    <rdf:Description rdf:about="urn:swrl:var#INFP">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl:var#INFP">
+    <rdf:Description rdf:about="urn:swrl:var#ISFP">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Introvert">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#x">
@@ -2260,7 +2321,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://arsemotica.di.unito.it/ontology#Anger"/>
+                                        <swrl:classPredicate rdf:resource="http://arsemotica.di.unito.it/ontology#Sadness"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2287,9 +2348,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#Introvert"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#INFP"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2356,7 +2417,74 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#INFP"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#ISFP"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#Structure"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://arsemotica.di.unito.it/ontology#Sadness"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#Introvert"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2449,7 +2577,117 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word"/>
+                                        <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Sadness_Words"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#INFP"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#described_by_word"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Sadness_Words"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#ISFP"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#described_by_word"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Sadness_Words"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#z"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2469,61 +2707,6 @@
                         <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#Introvert"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/ma-ont#Agent"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#described_by_word"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://literary_characters_psycological_profiles.owl#has_Personality"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="http://literary_characters_psycological_profiles.owl#Nervous_Personality"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
