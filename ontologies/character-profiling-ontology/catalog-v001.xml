@@ -3,6 +3,6 @@
     <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="file:/home/loic/Projects/Homer_dialog_role_ontology/ontologies/nif-core/nif-core.owl"/>
     <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1653834768696" name="http://literary_characters_psycological_profiles.owl" uri="model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1653860764475" name="http://literary_characters_psycological_profiles.owl" uri="model.owl"/>
     </group>
 </catalog>
