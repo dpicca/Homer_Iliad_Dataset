@@ -20,8 +20,8 @@
      xmlns:ma-ont="http://www.w3.org/ns/ma-ont#"
      xmlns:nif-core="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#">
     <owl:Ontology rdf:about="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl">
-        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl"/>
-        <owl:imports rdf:resource="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"/>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.owl"/>
+        <owl:imports rdf:resource="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/lemon/ontolex"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ma-ont#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="file:/home/loic/Projects/Homer_dialog_role_ontology/ontologies/nif-core/nif-core.owl"/>
+    <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1653814208522" name="http://literary_characters_psycological_profiles.owl" uri="model.owl"/>
+    </group>
+</catalog>
