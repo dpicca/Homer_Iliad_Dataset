@@ -19,6 +19,7 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
@@ -50,7 +51,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>Literary Characters Profile Ontology aligned with FOAF, Lemon and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework.</Literal>
+        <Literal>Literary Characters Profile Ontology aligned with FOAF, Lemon, Nif and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework.</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="emo:Acceptance"/>
@@ -167,13 +168,16 @@
         <Class abbreviatedIRI="emo:Wordnet_Sense"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hobbit"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Speech"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://lemon-model.net/lemon#LexicalSense"/>
+        <Class IRI="http://lemon-model.net/lemon#Word"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://lemon-model.net/lemon#Word"/>
+        <Class IRI="http://lemon-model.net/lemon#ontolex:LexicalSense"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI=":Agreeablness"/>
@@ -365,12 +369,6 @@
         <ObjectProperty abbreviatedIRI="emo:operateNear"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_NarrativeRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isAssociatedTo"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isSaidBy"/>
     </Declaration>
     <Declaration>
@@ -434,6 +432,9 @@
         <NamedIndividual IRI="#Disgust"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Introvert"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Joy"/>
     </Declaration>
     <Declaration>
@@ -447,12 +448,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Terror"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#hero"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#introvertion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#speaker-test"/>
@@ -527,6 +522,12 @@
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Word"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Structure"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="terms:Agent"/>
     </Declaration>
     <EquivalentClasses>
@@ -535,11 +536,18 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="emo:Word"/>
-        <Class abbreviatedIRI="nif-core:Word"/>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Word"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hobbit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":has_Personality"/>
+            <Class abbreviatedIRI=":Introvert"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Speech"/>
-        <Class abbreviatedIRI="nif-core:Structure"/>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Structure"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="terms:Agent"/>
@@ -1183,7 +1191,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="emo:Wordnet_Sense"/>
-        <Class IRI="http://lemon-model.net/lemon#LexicalSense"/>
+        <Class IRI="http://lemon-model.net/lemon#ontolex:LexicalSense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hobbit"/>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI=":Agreeablness"/>
@@ -1612,6 +1624,10 @@
         <NamedIndividual IRI="#Disgust"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Introvert"/>
+        <NamedIndividual IRI="#Introvert"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="emo:Joy"/>
         <NamedIndividual IRI="#Joy"/>
     </ClassAssertion>
@@ -1632,22 +1648,11 @@
         <NamedIndividual IRI="#Terror"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-        <NamedIndividual IRI="#hero"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_Personality"/>
-            <Class abbreviatedIRI=":Introvert"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#introvertion"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class abbreviatedIRI="ma-ont:Agent"/>
         <NamedIndividual IRI="#speaker-test"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="nif-core:Structure"/>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Structure"/>
         <NamedIndividual IRI="#speech-test"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1933,20 +1938,12 @@
         <Class abbreviatedIRI="emo:ComplexEmotion"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_NarrativeRole"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isAssociatedTo"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#said"/>
         <Class abbreviatedIRI="ma-ont:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
-        <Class abbreviatedIRI="nif-core:Structure"/>
+        <Class IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#nif:Structure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI=":described_by_word"/>
@@ -1989,14 +1986,6 @@
         <Class abbreviatedIRI="emo:BasicEmotion"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_NarrativeRole"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isAssociatedTo"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#said"/>
         <Class IRI="#Speech"/>
     </ObjectPropertyRange>
@@ -2032,6 +2021,51 @@
         <DataProperty abbreviatedIRI="emo:hasScore"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Speech"/>
+                <Variable abbreviatedIRI=":x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+                <Variable abbreviatedIRI=":x"/>
+                <Variable abbreviatedIRI=":z"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="emo:Sadness"/>
+                <Variable abbreviatedIRI=":z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSaidBy"/>
+                <Variable abbreviatedIRI=":x"/>
+                <Variable abbreviatedIRI=":y"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI="ma-ont:Agent"/>
+                <Variable abbreviatedIRI=":y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+                <Variable abbreviatedIRI=":y"/>
+                <NamedIndividual abbreviatedIRI=":INFP"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
     <DLSafeRule>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
@@ -2088,41 +2122,8 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S1</Literal>
+            <Literal>S3</Literal>
         </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Speech"/>
-                <Variable IRI="urn:swrl:var#x"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#z"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class abbreviatedIRI="emo:Sadness"/>
-                <Variable IRI="urn:swrl:var#z"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isSaidBy"/>
-                <Variable IRI="urn:swrl:var#x"/>
-                <Variable IRI="urn:swrl:var#y"/>
-            </ObjectPropertyAtom>
-            <ClassAtom>
-                <Class abbreviatedIRI="ma-ont:Agent"/>
-                <Variable IRI="urn:swrl:var#y"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
-                <Variable IRI="urn:swrl:var#y"/>
-                <NamedIndividual abbreviatedIRI=":INFP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
         <Body>
             <ClassAtom>
                 <Class IRI="#Speech"/>
@@ -2151,7 +2152,7 @@
             <ObjectPropertyAtom>
                 <ObjectProperty abbreviatedIRI=":has_Personality"/>
                 <Variable IRI="urn:swrl:var#y"/>
-                <NamedIndividual IRI="#introvertion"/>
+                <NamedIndividual IRI="#Introvert"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2162,12 +2163,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
-        <AnonymousIndividual nodeID="_:genid2147484001"/>
+        <AnonymousIndividual nodeID="_:genid2147484015"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
-        <AnonymousIndividual nodeID="_:genid2147484002"/>
+        <AnonymousIndividual nodeID="_:genid2147484016"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
     </AnnotationAssertion>
 </Ontology>
