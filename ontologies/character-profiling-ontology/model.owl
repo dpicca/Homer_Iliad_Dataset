@@ -12,6 +12,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
@@ -31,7 +32,7 @@
         <dc:creator rdf:resource="http://orcid.org/0000-0002-8323-8764"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0003-2014-0855"/>
         <dc:title>Characters Profiles Ontology (CPO)</dc:title>
-        <rdfs:comment>Literary Characters Profile Ontology aligned with FOAF, Lemon and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework.</rdfs:comment>
+        <rdfs:comment>Literary Characters Profile Ontology aligned with FOAF, Lemon, Nif and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework.</rdfs:comment>
     </owl:Ontology>
     
 
