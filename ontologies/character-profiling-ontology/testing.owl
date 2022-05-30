@@ -2162,6 +2162,36 @@
         <Literal>http://dbpedia.org/page/Terror</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#said</IRI>
+        <Literal>The &apos;said&apos; property relates a speaker &quot;ma:Agent&quot; to a the &quot;Speach &quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:denotes_emotion</AbbreviatedIRI>
+        <Literal>The &apos;denotes_emotion&apos; property relates an ontological entity Emotion to a nif structure that represents the string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasEmotionalCognitiveFunction</AbbreviatedIRI>
+        <Literal>The &apos;hasEmotionalCognitiveFunction&apos; property relates an &quot;Emotion&quot; to a concept of Myers Briggs Personality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:has_MyerBriggs_Personality</AbbreviatedIRI>
+        <Literal>The &apos;has_MyersBriggs_Personality&apos; property relates an &quot;Speaker&quot; to a concept of Myers Briggs Personality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:has_Personality</AbbreviatedIRI>
+        <Literal>The &apos;has_Personality&apos; property relates an &quot;Speaker&quot; to a concept of NEO-PI Personality type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:isCorrelatedWith</AbbreviatedIRI>
+        <Literal>The &apos;isCorrelatedWith&apos; property relates an concept &quot;Personality Profile&quot; to a concept of &quot;Myers Briggs Personality&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
         <AnonymousIndividual nodeID="_:genid2147484015"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
