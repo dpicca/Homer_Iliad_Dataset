@@ -8,5 +8,5 @@ Installer [Pandoc](https://pandoc.org/installing.html) pour convertir le documen
 
 Dans un terminal, se placer dans le dossier *report* puis
 ```
-pandoc myReport.md -o myReport.pdf
+pandoc --filter pandoc-crossref myReport.md -o myReport.pdf
 ```
