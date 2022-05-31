@@ -4,8 +4,6 @@
     <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="file:/home/loic/Projects/Homer_dialog_role_ontology/ontologies/nif-core/nif-core.owl"/>
     <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1653972909668" name="duplicate:http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl" uri="model.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1653972909668" name="duplicate:http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl" uri="testing.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1653972909668" name="http://www.w3.org/ns/lemon/ontolex" uri="ontolex.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1653973527010" name="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl" uri="model.owl"/>
     </group>
 </catalog>
