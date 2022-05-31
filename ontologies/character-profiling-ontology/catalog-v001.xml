@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://dublincore.org/2008/01/14/dcelements.rdf" uri="file:/Users/marcela/Documents/GitHub/Homer_dialog_role_ontology/ontologies/dublin-core-elements/dcelements.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="file:/home/loic/Projects/Homer_dialog_role_ontology/ontologies/nif-core/nif-core.owl"/>
+    <uri id="Imports Wizard Entry" name="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#" uri="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1653746027275" name="http://literary_characters_psycological_profiles.owl" uri="model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1653973527010" name="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl" uri="model.owl"/>
     </group>
 </catalog>
