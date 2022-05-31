@@ -1,22 +1,39 @@
 # Plato_Homer_Personality
 
-## Contexte
+A l'aide d'extraits de l'Iliade annotés avec des émotions, le but est de déterminer le rôle narratif des personnages en dressant un profil psychologique par l'utilisation des technologies du web sémantique.
 
-Dans le cadre du cours de programmation pour le web sémantique, vous devrez prendre un jeu de données sur les dialogues de l'Iliade afin de saisir la personnalité et le rôle des personnages à travers des discours directs.
+Pour plus d'informations, consultez le [rapport](docs/report/report-v.1.pdf).
 
-## Objectifs
+## Installer les dépendances
 
-Les objectifs du projet sont simples et peuvent être divisés en quatre étapes distinctes
+```
+pip install -r requirements.txt
+```
+## Données requises
 
-- Nettoyer les données sources afin de les structurer dans un DataFrame.
-- L'analyse et la création de statistiques sur ces données, comme par exemple celles décrites dans [cet article](Annotating_the_Sentiment_of_Homeric_Text__LREC_2022_.pdf).
-- Explorer et analyser les ontologies [character-profiling-ontology](https://github.com/dpicca/ontologies/tree/main/character-profiling-ontology/V2)
-  -  vous trouverez plus d'infos sur cet ontologie [ici](An_Ontological_Model_for_Inferring_Psychological_Profiles_and_Narrative_Roles_of_Characters.pdf) 
-- ainsi que [ontolex-lemon](https://raw.githubusercontent.com/ontolex/lexinfo/master/ontology/3.0/lexinfo.owl)
-  - vous trouverez plus d'infos sur cet ontologie [ici](https://www.w3.org/2019/09/lexicog/), [ici](https://lemon-model.net/index.php), [ici](https://elex.link/elex2017/wp-content/uploads/2017/09/paper36.pdf) et [ici](https://youtu.be/TxqvnLPIsa8)
-- Modifier et créer des nouvelles régles SWRL de l'ontologie `character-profiling-ontology`
-- Faire un alignement ontologique entre les deux ontologies
-- Nourrir l'ontologie avec les données
+Si vous souhaitez ajouter des données à l'ontologie, il vous sera nécessaire de les acquérir sous format JSON, labélisées de manière similaire aux fichiers que vous pouvez trouver dans le dossier Dataframes/Jsonfiles. Le logiciel utilisé pour réaliser ces fichiers est appelé [LabelStudio](https://labelstud.io/)
 
-Optionel
-- Créer des systèmes d'évaluations
+## Nettoyage de données
+
+Vous trouverez dans le dossier "Dataframes" un document contenant un fichier "Data_cleaning.ipynb". Ce fichier contient des fonctions Python permettant de préparer des données afin qu'elles puissent ensuite être importées dans une ontologie sous forme de DataFrame.
+
+Pour utiliser ce script, il vous suffit de fournir une liste de chemins vers les fichiers JSON contenant les données que vous souhaitez nettoyer:
+```
+json_list = ['Jsonfiles/ch1_1.json', 'Jsonfiles/ch1_2.json', 'Jsonfiles/ch1_3.json']
+```
+Il vous faut ensuite passer cette liste à travers la fonction merge_dataframes():
+```
+dataframe, krippendorff, graph = merge_dataframes(json_list)
+```
+Vous pourrez ensuite accéder au dataframe final, obtenir la valeur krippendorff du dataframe, et retrouver un graphique de vos données à l'aide des 3 variables ci-dessus.
+
+## Nourrir l'ontologie avec les données
+
+Dans le dossier `Dataframes`, le script `data_to_owl.py` est utilisé pour mobiliser les dataframes exportés en tant que pickles dans `pickled_files`. Le script ouvre alors l'ontologie `../ontologies/character-profiling-ontology/model.owl` pour, dans le futur, écrire les individus de type Speech et Speaker.
+
+## Contributors
+
+- [Loïc Aubrays](https://ch.linkedin.com/in/loicaubrays), étudiant
+- Gislain Delavy, étudiant
+- [Marcela Hitrackova](https://ch.linkedin.com/in/marcela-hitrackova-2aa566222), étudiant
+- [Davide Picca](https://www.unil.ch/unisciences/davidepicca), enseignant
