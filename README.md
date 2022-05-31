@@ -1,5 +1,8 @@
 # Plato_Homer_Personality
 
+A l'aide d'extraits de l'Iliade annotés avec des émotions, le but est de déterminer le rôle narratif des personnages en dressant un profil psychologique par l'utilisation des technologies du web sémantique.
+
+Pour plus d'informations, consultez le [rapport](docs/report/report-v.1.pdf).
 
 ## Installer les dépendances
 
@@ -23,6 +26,10 @@ Il vous faut ensuite passer cette liste à travers la fonction merge_dataframes(
 dataframe, krippendorff, graph = merge_dataframes(json_list)
 ```
 Vous pourrez ensuite accéder au dataframe final, obtenir la valeur krippendorff du dataframe, et retrouver un graphique de vos données à l'aide des 3 variables ci-dessus.
+
+## Nourrir l'ontologie avec les données
+
+Dans le dossier `Dataframes`, le script `data_to_owl.py` est utilisé pour mobiliser les dataframes exportés en tant que pickles dans `pickled_files`. Le script ouvre alors l'ontologie `../ontologies/character-profiling-ontology/model.owl` pour, dans le futur, écrire les individus de type Speech et Speaker.
 
 ## Contributors
 
