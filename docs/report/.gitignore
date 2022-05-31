@@ -3,4 +3,4 @@
 # git add the_file.pdf
 
 *.pdf
-!report-v.0.1.pdf
+!report-v*.pdf
