@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl"
      versionIRI="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.owl">
-    <Prefix name="" IRI="http://literary_characters_psycological_profiles.owl#"/>
+    <Prefix name="" IRI="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="emo" IRI="http://arsemotica.di.unito.it/ontology#"/>
@@ -168,7 +168,7 @@
         <Class abbreviatedIRI="emo:Wordnet_Sense"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hobbit"/>
+        <Class IRI="#SimpleHeroTest"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Speech"/>
@@ -180,163 +180,166 @@
         <Class IRI="http://lemon-model.net/lemon#Word"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Agreeablness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Anger_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Anger_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Antagonistic"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Antagonistic_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":AntiHero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#AntiHero"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Ardor_words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Ardor_words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Calm_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Calm_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Careless"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Careless"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Carelessness_Denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Cautious"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Cautious"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Cautiousness_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Compassion_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Compassionate"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Compassionate"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Conscientiousness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Conscientiousness"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Disgust_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Disgust_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extraversion"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Extroversion_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Extrovert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extrovert"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Fear_words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Fear_words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Hero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Hero"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Introvert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Joy_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Joy_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Nervous"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Neuroticism"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Neuroticism"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":OpenMinded"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMinded"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":OpenMindedness_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Openness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Openness"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Organized"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Organized"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Organized_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Organized_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Pleasure_words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Pleasure_words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Sadness_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Sadness_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Safeguard_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Safeguarding"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguarding"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Villain"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Villain"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":decision"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":energy"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":feeling"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":information"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#information"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":introversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":intuition"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":judging"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":organisation"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":perceiving"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":sensing"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":thinking"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="terms:Agent"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="ma-ont:Agent"/>
@@ -375,22 +378,22 @@
         <ObjectProperty IRI="#said"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#described_by_word"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="ma-ont:hasCreator"/>
@@ -456,61 +459,58 @@
         <NamedIndividual IRI="#speech-test"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#&apos;this_is_a_test&apos;"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#Antagonism"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":Antagonism"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENFJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ENFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENFP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ENFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENTJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ENTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENTP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ENTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESFJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ESFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESFP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ESFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESTJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ESTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESTP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ESTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INFJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":INFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INFP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":INFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INTJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":INTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INTP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":INTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISFJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ISFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISFP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ISFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISTJ"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ISTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISTP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":ISTP"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI=":Nervous_Personality"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#Nervous_Personality"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -521,9 +521,6 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
     </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="terms:Agent"/>
-    </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="emo:Word"/>
         <Class IRI="http://lemon-model.net/lemon#Word"/>
@@ -533,15 +530,58 @@
         <Class abbreviatedIRI="nif-core:Word"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Hobbit"/>
+        <Class IRI="#SimpleHeroTest"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_Personality"/>
-            <Class abbreviatedIRI=":Introvert"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+            <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Speech"/>
-        <Class abbreviatedIRI="nif-core:Structure"/>
+        <Class abbreviatedIRI="nif-core:String"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#AntiHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMinded"/>
+                </ObjectUnionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Hero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#Compassionate"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Extrovert"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMinded"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Organized"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguarding"/>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Villain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Careless"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Cautious"/>
+                    <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="terms:Agent"/>
@@ -605,10 +645,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Anger"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -654,10 +694,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Anticipation"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -776,10 +816,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Disgust"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -873,10 +913,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Joy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -998,10 +1038,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Sadness"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1065,10 +1105,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Surprise"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1103,10 +1143,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Terror"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1141,10 +1181,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="emo:Trust"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1188,319 +1228,276 @@
         <Class IRI="http://lemon-model.net/lemon#LexicalSense"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Hobbit"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
+        <Class IRI="#SimpleHeroTest"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Agreeablness"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </SubClassOf>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal>NEO-PI Agreableness is correlated with MBTI thinking feeling</Literal>
         </Annotation>
-        <Class abbreviatedIRI=":Agreeablness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
-            <Class abbreviatedIRI=":decision"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+            <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Anger_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Anger_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Antagonistic"/>
-        <Class abbreviatedIRI=":Agreeablness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Antagonistic_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":AntiHero"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#AntiHero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":AntiHero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Ardor_words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Calm_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Careless"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Conscientiousness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Cautious"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Openness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Compassionate"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Agreeablness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Conscientiousness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Conscientiousness"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":Antagonistic"/>
-                <ObjectUnionOf>
-                    <Class abbreviatedIRI=":Introvert"/>
-                    <Class abbreviatedIRI=":Nervous"/>
-                    <Class abbreviatedIRI=":OpenMinded"/>
-                </ObjectUnionOf>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Ardor_words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Disgust_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Calm_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Careless"/>
-        <Class abbreviatedIRI=":Conscientiousness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Carelessness_Denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Cautious"/>
-        <Class abbreviatedIRI=":Openness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Cautiousness_denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Compassion_denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Compassionate"/>
-        <Class abbreviatedIRI=":Agreeablness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Conscientiousness"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Conscientiousness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extraversion"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+            <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extrovert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extraversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Fear_words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Hero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extraversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Joy_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Neuroticism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Neuroticism"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMinded"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Openness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Openness"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Openness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":decision"/>
-                <Class abbreviatedIRI=":organisation"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#information"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Disgust_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Organized"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Conscientiousness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Organized_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Extraversion"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Extraversion"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
-            <Class abbreviatedIRI=":energy"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Extroversion_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Pleasure_words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Extrovert"/>
-        <Class abbreviatedIRI=":Extraversion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Fear_words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Sadness_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Hero"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Hero"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_Personality"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":Compassionate"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI=":Extrovert"/>
-                    <Class abbreviatedIRI=":OpenMinded"/>
-                    <Class abbreviatedIRI=":Organized"/>
-                    <Class abbreviatedIRI=":Safeguarding"/>
-                </ObjectIntersectionOf>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words"/>
         <Class abbreviatedIRI="emo:Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Introvert"/>
-        <Class abbreviatedIRI=":Extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguarding"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Neuroticism"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Joy_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Villain"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Nervous"/>
-        <Class abbreviatedIRI=":Neuroticism"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Neuroticism"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":OpenMinded"/>
-        <Class abbreviatedIRI=":Openness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":OpenMindedness_denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Openness"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Openness"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":decision"/>
-                <Class abbreviatedIRI=":energy"/>
-                <Class abbreviatedIRI=":information"/>
-                <Class abbreviatedIRI=":organisation"/>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Organized"/>
-        <Class abbreviatedIRI=":Conscientiousness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Organized_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Pleasure_words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Sadness_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Safeguard_denoting_Words"/>
-        <Class abbreviatedIRI="emo:Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Safeguarding"/>
-        <Class abbreviatedIRI=":Neuroticism"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Villain"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":Villain"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_Personality"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":Antagonistic"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI=":Careless"/>
-                    <Class abbreviatedIRI=":Cautious"/>
-                    <Class abbreviatedIRI=":Nervous"/>
-                </ObjectIntersectionOf>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
         <Class abbreviatedIRI="emo:ComplexEmotion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
             <Class abbreviatedIRI="emo:Ecstacy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
             <Class abbreviatedIRI="emo:Interest"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":decision"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":energy"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":extraversion"/>
-        <Class abbreviatedIRI=":energy"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":feeling"/>
-        <Class abbreviatedIRI=":decision"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":information"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#information"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":introversion"/>
-        <Class abbreviatedIRI=":energy"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":intuition"/>
-        <Class abbreviatedIRI=":information"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#information"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":judging"/>
-        <Class abbreviatedIRI=":organisation"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":organisation"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":perceiving"/>
-        <Class abbreviatedIRI=":organisation"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#organisation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
         <Class abbreviatedIRI="emo:ComplexEmotion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
             <Class abbreviatedIRI="emo:Amazement"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
             <Class abbreviatedIRI="emo:Joy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":sensing"/>
-        <Class abbreviatedIRI=":information"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#information"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":thinking"/>
-        <Class abbreviatedIRI=":decision"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#decision"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="emo:Aggressiveness"/>
@@ -1521,8 +1518,8 @@
         <Class abbreviatedIRI="emo:Optimism"/>
         <Class abbreviatedIRI="emo:Remorse"/>
         <Class abbreviatedIRI="emo:Submission"/>
-        <Class abbreviatedIRI=":ardeur"/>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="emo:Aggressiveness"/>
@@ -1533,7 +1530,7 @@
         <Class abbreviatedIRI="emo:Optimism"/>
         <Class abbreviatedIRI="emo:Remorse"/>
         <Class abbreviatedIRI="emo:Submission"/>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="emo:Anger"/>
@@ -1550,67 +1547,67 @@
         <Class abbreviatedIRI="emo:ComplexEmotion"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Antagonistic"/>
-        <Class abbreviatedIRI=":Compassionate"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Compassionate"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Careless"/>
-        <Class abbreviatedIRI=":Organized"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Careless"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Organized"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Extrovert"/>
-        <Class abbreviatedIRI=":Introvert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Extrovert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Hero"/>
-        <Class abbreviatedIRI=":Villain"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Hero"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Villain"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Narrative_Roles"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Narrative_Roles"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Nervous"/>
-        <Class abbreviatedIRI=":Safeguarding"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Safeguarding"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":extraversion"/>
-        <Class abbreviatedIRI=":introversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":feeling"/>
-        <Class abbreviatedIRI=":thinking"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":intuition"/>
-        <Class abbreviatedIRI=":sensing"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":judging"/>
-        <Class abbreviatedIRI=":perceiving"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="emo:Anger"/>
         <NamedIndividual abbreviatedIRI="emoart:Anger"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words"/>
         <NamedIndividual abbreviatedIRI="emo:preoccupato"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word"/>
         <NamedIndividual abbreviatedIRI="emo:vergogna"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":ardeur"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#ardeur"/>
         <NamedIndividual IRI="#Ardeur"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1618,7 +1615,7 @@
         <NamedIndividual IRI="#Disgust"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Introvert"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Introvert"/>
         <NamedIndividual IRI="#Introvert"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1626,7 +1623,7 @@
         <NamedIndividual IRI="#Joy"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":plaisir"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#plaisir"/>
         <NamedIndividual IRI="#Plaisir"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1646,212 +1643,208 @@
         <NamedIndividual IRI="#speaker-test"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="nif-core:Structure"/>
+        <Class IRI="#Speech"/>
         <NamedIndividual IRI="#speech-test"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Calm_Words"/>
-        <NamedIndividual IRI="#&apos;this_is_a_test&apos;"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI=":Antagonistic"/>
-        <NamedIndividual abbreviatedIRI=":Antagonism"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Antagonistic"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#Antagonism"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ENFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENFJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ENFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENFP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ENTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENTJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ENTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ENTP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ESFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESFJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ESFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESFP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":sensing"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ESTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESTJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":extraversion"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":sensing"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#extraversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ESTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ESTP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":INFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INFJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":INFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INFP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":INTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INTJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":intuition"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#intuition"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":INTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INTP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ISFJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISFJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":feeling"/>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#feeling"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ISFP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISFP"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":judging"/>
-                <Class abbreviatedIRI=":sensing"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#judging"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ISTJ"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISTJ"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+            <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":introversion"/>
-                <Class abbreviatedIRI=":perceiving"/>
-                <Class abbreviatedIRI=":sensing"/>
-                <Class abbreviatedIRI=":thinking"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#introversion"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#perceiving"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#sensing"/>
+                <Class IRI="http://literary_characters_psycological_profiles.owl#thinking"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-        <NamedIndividual abbreviatedIRI=":ISTP"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISTP"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Nervous"/>
-        <NamedIndividual abbreviatedIRI=":Nervous_Personality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Nervous"/>
+        <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#Nervous_Personality"/>
     </ClassAssertion>
     <SameIndividual>
         <NamedIndividual abbreviatedIRI="emoart:Anger"/>
@@ -1877,7 +1870,7 @@
         <NamedIndividual IRI="#speaker-test"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
         <NamedIndividual IRI="#speech-test"/>
         <NamedIndividual IRI="#Sadness"/>
     </ObjectPropertyAssertion>
@@ -1886,8 +1879,13 @@
         <NamedIndividual IRI="#speaker-test"/>
         <Literal xml:lang="fr">Poireau</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="nif-core:isString"/>
+        <NamedIndividual IRI="#speech-test"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This is a speech test.</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -1936,28 +1934,28 @@
         <Class abbreviatedIRI="ma-ont:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
         <Class abbreviatedIRI="nif-core:Structure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#described_by_word"/>
         <Class abbreviatedIRI="ma-ont:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
         <Class abbreviatedIRI="emo:Emotion"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
         <Class abbreviatedIRI="ma-ont:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
         <Class abbreviatedIRI="ma-ont:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="emoart:hasEmotion"/>
@@ -1984,28 +1982,28 @@
         <Class IRI="#Speech"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
         <Class abbreviatedIRI="emo:Emotion"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#described_by_word"/>
         <Class IRI="http://lemon-model.net/lemon#Word"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":hasEmotionalCognitiveFunction"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":has_Personality"/>
-        <Class abbreviatedIRI=":Personality_Profiles"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#Personality_Profiles"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":isCorrelatedWith"/>
-        <Class abbreviatedIRI=":MyersBriggsPersonality"/>
+        <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#isCorrelatedWith"/>
+        <Class IRI="http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="emo:hasScore"/>
@@ -2031,32 +2029,32 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Speech"/>
-                <Variable abbreviatedIRI=":x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
-                <Variable abbreviatedIRI=":x"/>
-                <Variable abbreviatedIRI=":z"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#z"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class abbreviatedIRI="emo:Sadness"/>
-                <Variable abbreviatedIRI=":z"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#z"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#isSaidBy"/>
-                <Variable abbreviatedIRI=":x"/>
-                <Variable abbreviatedIRI=":y"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class abbreviatedIRI="ma-ont:Agent"/>
-                <Variable abbreviatedIRI=":y"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
             </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
-                <Variable abbreviatedIRI=":y"/>
-                <NamedIndividual abbreviatedIRI=":INFP"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
+                <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#INFP"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2076,32 +2074,32 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Speech"/>
-                <Variable abbreviatedIRI=":x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
-                <Variable abbreviatedIRI=":x"/>
-                <Variable abbreviatedIRI=":z"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#z"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class abbreviatedIRI="emo:Sadness"/>
-                <Variable abbreviatedIRI=":z"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#z"/>
             </ClassAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#isSaidBy"/>
-                <Variable abbreviatedIRI=":x"/>
-                <Variable abbreviatedIRI=":y"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#x"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
             </ObjectPropertyAtom>
             <ClassAtom>
                 <Class abbreviatedIRI="ma-ont:Agent"/>
-                <Variable abbreviatedIRI=":y"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
             </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":has_MyerBriggs_Personality"/>
-                <Variable abbreviatedIRI=":y"/>
-                <NamedIndividual abbreviatedIRI=":ISFP"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality"/>
+                <Variable IRI="http://literary_characters_psycological_profiles.owl#y"/>
+                <NamedIndividual IRI="http://literary_characters_psycological_profiles.owl#ISFP"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2124,7 +2122,7 @@
                 <Variable IRI="urn:swrl:var#x"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#denotes_emotion"/>
                 <Variable IRI="urn:swrl:var#x"/>
                 <Variable IRI="urn:swrl:var#z"/>
             </ObjectPropertyAtom>
@@ -2144,7 +2142,7 @@
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty abbreviatedIRI=":has_Personality"/>
+                <ObjectProperty IRI="http://literary_characters_psycological_profiles.owl#has_Personality"/>
                 <Variable IRI="urn:swrl:var#y"/>
                 <NamedIndividual IRI="#Introvert"/>
             </ObjectPropertyAtom>
@@ -2177,127 +2175,127 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ENFJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ENFJ</IRI>
         <Literal>ENFJ(extraversion, intuition, feeling, judging) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ENFP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ENFP</IRI>
         <Literal>ENFP(extraversion, intuition, feeling, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ENTJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ENTJ</IRI>
         <Literal>ENTJ(extraversion, intuition, thinking, judging) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ENTP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ENTP</IRI>
         <Literal>ENTP(extraversion, intuition, thinking, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ESFJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ESFJ</IRI>
         <Literal>ESFJ(extraversion, sensing, feeling, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ESFP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ESFP</IRI>
         <Literal>ESFP(ertaversion, sensing, feeling, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ESTJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ESTJ</IRI>
         <Literal>ESTJ(ertaversion, sensing, thinking, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI)..</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ESTP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ESTP</IRI>
         <Literal>ESTP(extraversion, sensing, thinking, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:INFJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#INFJ</IRI>
         <Literal>INFJ (introversion, intuition, feeling, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:INFP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#INFP</IRI>
         <Literal>INFP (introversion, intuition, feeling, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:INTJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#INTJ</IRI>
         <Literal>INTJ (introversion, intuition, thinking, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:INTP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#INTP</IRI>
         <Literal>INTP (introversion, intuition, thinking, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ISFJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ISFJ</IRI>
         <Literal>ISFJ (introversion, sensing, feeling, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ISFP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ISFP</IRI>
         <Literal>ISFP (introversion, sensing, feeling, perceiving) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ISTJ</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ISTJ</IRI>
         <Literal>ISTJ (introversion, sensing, thinking, judgment) is a four-letter code representing one of the 16 personality types found on the Myers-Briggs Type Indicator (MBTI)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:ISTP</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#ISTP</IRI>
         <Literal>ISTP (introverted, sensing, thinking, perceiving) is one of the 16 personality types identified by the Myers-Briggs Type Indicator (MBTI).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:MyersBriggsPersonality</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#MyersBriggsPersonality</IRI>
         <Literal>Myers Briggs Personality Type class referring to the personality type based on the Myers-Briggs Type Indicator (MBTI)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Narrative_Roles</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#Narrative_Roles</IRI>
         <Literal>Narrative Role class that is referring to the narrative identity of the litterary character</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Personality_Profiles</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#Personality_Profiles</IRI>
         <Literal>Personality Profile that is reffering to NEO-PI &quot;Big 5&quot; types of personality.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:denotes_emotion</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#denotes_emotion</IRI>
         <Literal>Object property that make relation between Speech class of the litterary character and Emotion class.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:described_by_word</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#described_by_word</IRI>
         <Literal>Object property described_by_word make relation between Litterary Character &quot;ma:Agent&quot; and &quot;Word&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:hasEmotionalCognitiveFunction</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#hasEmotionalCognitiveFunction</IRI>
         <Literal>Object Property hasEmotionalCognitiveFunction make relation between Emotion class and Myers Briggs Personality Profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:has_MyerBriggs_Personality</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#has_MyerBriggs_Personality</IRI>
         <Literal>Object Property has_MyerBriggs_Personality make relation between Litterary Character &quot;ma:Agent&quot; and Myers Briggs Personality Profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:has_Personality</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#has_Personality</IRI>
         <Literal>Object property has_Personality make relation between Litterary Character &quot;ma:Agent&quot; and NEO-PI &quot;Big 5&quot; Personality Profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:isCorrelatedWith</AbbreviatedIRI>
+        <IRI>http://literary_characters_psycological_profiles.owl#isCorrelatedWith</IRI>
         <Literal>Object Property isCorrelatedWith make relation between NEO-PI &quot;Big 5&quot; Personality Profile and Myers Briggs Personality Profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2307,12 +2305,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
-        <AnonymousIndividual nodeID="_:genid2147484015"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
-        <AnonymousIndividual nodeID="_:genid2147484016"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
     </AnnotationAssertion>
 </Ontology>
