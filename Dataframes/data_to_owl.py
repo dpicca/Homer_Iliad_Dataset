@@ -6,7 +6,7 @@ from owlready2 import *
 from pathlib import Path
 import pandas as pd 
 
-# Paths
+# Paths of the project
 PROJECT_DIR = Path.cwd().parent
 CHARACTER_PROFILING_ONTOLOGY = 'file://' + str(PROJECT_DIR) + '/ontologies/character-profiling-ontology/model.owl' # Owlready2 need RDF/XML format
 
@@ -23,6 +23,20 @@ for pickled_file in files:
 # Open the ontology
 onto = get_ontology(CHARACTER_PROFILING_ONTOLOGY).load()
 
+# Verify ontology loading
 print(list(onto.classes()))
 
-# print(onto.Emotion)
+############################
+### For a future development
+############################
+
+# Probably better to handle dataframe by dataframe, where each dataframe is a
+# chapter of the Iliad book.
+
+# 1. Generate speakers individuals
+# Get speaker from the dataframes
+# Write all speakers in the ontology with a loop
+
+# 2. Generate speeches individuals
+# For each speech, adjust properties
+# then write each speech in the ontology
