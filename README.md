@@ -1,4 +1,4 @@
-# Plato_Homer_Personality
+# Characters roles and personality through emotions in Homer
 
 A l'aide d'extraits de l'Iliade annotés avec des émotions, le but est de déterminer le rôle narratif des personnages en dressant un profil psychologique par l'utilisation des technologies du web sémantique.
 
